@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:video_player/video_player.dart';
+import 'services/content_sync.dart';
 
 final FirebaseAuth _auth = FirebaseAuth.instance;
 
@@ -13,6 +14,11 @@ Future<User?> signInAnonymously() async {
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
+  ContentfulSync contentfulSync = ContentfulSync(
+      spaceId: '5n0lh0o2t6d6',
+      accessToken: 'Z9nJXTEddwrQXb6LrCB_NesqS9FPqtRevSgBm6PYRcE');
+  await contentfulSync.sync();
+  List<dynamic> content = contentfulSync.getContent();
   runApp(const MyApp());
 }
 
@@ -42,7 +48,7 @@ class LoginPage extends StatelessWidget {
           child: const Text('Sign in anonymously'),
           onPressed: () async {
             User? user = await signInAnonymously();
-             if (user != null) {
+            if (user != null) {
               // ignore: use_build_context_synchronously
               Navigator.push(
                 context,
