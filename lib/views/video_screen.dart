@@ -17,6 +17,8 @@ class VideoPlayerScreen extends ConsumerStatefulWidget {
 class _VideoPlayerScreenState extends ConsumerState<VideoPlayerScreen> {
   late PageController _pageController;
   late List<VideoPlayerController> _videoControllers;
+  ValueNotifier<Duration> _videoPosition = ValueNotifier<Duration>(Duration.zero);
+
   int _currentIndex = 0;
   bool _showPlayPauseIcon = false;
   double _playPauseOpacity = 0.0;
@@ -32,8 +34,19 @@ class _VideoPlayerScreenState extends ConsumerState<VideoPlayerScreen> {
           VideoPlayerController.network(video['url']!);
       controller.initialize().then((_) => setState(() {}));
       controller.setLooping(true);
+
+      
       return controller;
     }).toList();
+
+    // Add the listener to each controller here
+  for (var controller in _videoControllers) {
+    controller.addListener(() {
+      if (_currentIndex == _videoControllers.indexOf(controller)) {
+        _videoPosition.value = controller.value.position;
+      }
+    });
+  }
 
     // Play the first video
     _videoControllers[_currentIndex].play();
@@ -79,6 +92,7 @@ class _VideoPlayerScreenState extends ConsumerState<VideoPlayerScreen> {
   @override
   void dispose() {
     _pageController.dispose();
+    _videoPosition.dispose();
     for (var controller in _videoControllers) {
       controller.dispose();
     }
@@ -151,7 +165,8 @@ class _VideoPlayerScreenState extends ConsumerState<VideoPlayerScreen> {
                         print("Tapped on progress bar");
                       },
                       child: CustomVideoProgressBar(
-                          controller: _videoControllers[index]),
+                          controller: _videoControllers[index],
+                          videoPosition: _videoPosition,),
                     )),
                 Center(
                   child: AnimatedOpacity(
@@ -177,8 +192,12 @@ class _VideoPlayerScreenState extends ConsumerState<VideoPlayerScreen> {
 
 class CustomVideoProgressBar extends StatefulWidget {
   final VideoPlayerController controller;
+  final ValueNotifier<Duration> videoPosition;
 
-  CustomVideoProgressBar({required this.controller});
+  CustomVideoProgressBar({
+    required this.controller,
+    required this.videoPosition,
+  });
 
   @override
   _CustomVideoProgressBarState createState() => _CustomVideoProgressBarState();
@@ -233,6 +252,34 @@ class _CustomVideoProgressBarState extends State<CustomVideoProgressBar> {
               bufferedColor: Colors.grey,
               backgroundColor: Colors.black,
             ),
+          ),
+          ValueListenableBuilder<Duration>(
+            valueListenable: widget.videoPosition,
+            builder: (context, position, child) {
+              return Slider(
+                value: position.inMilliseconds.toDouble(),
+                onChanged: (value) {
+                  print(_isScrubbing);
+                  print(_scrubbingPosition);
+                  setState(() {
+                    _isScrubbing = true;
+                    _scrubbingPosition = Duration(milliseconds: value.toInt());
+                    widget.controller.seekTo(_scrubbingPosition);
+                  });
+                },
+                onChangeEnd: (value) {
+                  print(_isScrubbing);
+                  print(_scrubbingPosition);
+                  setState(() {
+                    _isScrubbing = false;
+                  });
+                },
+                min: 0,
+                max: widget.controller.value.duration.inMilliseconds.toDouble(),
+                activeColor: Colors.transparent,
+                inactiveColor: Colors.transparent,
+              );
+            },
           ),
           Positioned(
             bottom: 30, // Increase the bottom position
