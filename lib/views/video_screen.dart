@@ -206,170 +206,102 @@ class CustomVideoProgressBar extends StatefulWidget {
 class _CustomVideoProgressBarState extends State<CustomVideoProgressBar> {
   bool _isScrubbing = false;
   Duration _scrubbingPosition = Duration.zero;
+  double _thumbPosition = 0.0; // Add this to track the thumb position
+  final GlobalKey _timeKey = GlobalKey();
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onHorizontalDragStart: (details) {
-        print(_isScrubbing);
-        print(_scrubbingPosition);
-        print("Start Scrubbing");
-        setState(() {
-          _isScrubbing = true;
-          _scrubbingPosition = widget.controller.value.position;
-        });
-      },
-      onHorizontalDragUpdate: (details) {
-        final delta = details.primaryDelta ?? 0;
-        final totalDuration = widget.controller.value.duration.inMilliseconds;
-        final newPosition = _scrubbingPosition.inMilliseconds +
-            (totalDuration * delta / context.size!.width).round();
-        print(newPosition);
-        setState(() {
-          _scrubbingPosition =
-              Duration(milliseconds: newPosition.clamp(0, totalDuration));
-        });
-      },
-      onHorizontalDragEnd: (details) {
-        print(_isScrubbing);
-        widget.controller.seekTo(_scrubbingPosition);
-        setState(() {
-          _isScrubbing = false;
-        });
-      },
-      child: Stack(
-        children: [
-          Container(
-            height: 10, // Set a fixed height
-            color: Colors.red, // Set a visible color
-          ),
-          VideoProgressIndicator(
-            widget.controller,
-            allowScrubbing: true,
-            padding: EdgeInsets.all(0),
-            colors: VideoProgressColors(
-              playedColor: Colors.blue,
-              bufferedColor: Colors.grey,
-              backgroundColor: Colors.black,
-            ),
-          ),
-          ValueListenableBuilder<Duration>(
-            valueListenable: widget.videoPosition,
-            builder: (context, position, child) {
-              return Slider(
-                value: position.inMilliseconds.toDouble(),
-                onChanged: (value) {
-                  print(_isScrubbing);
-                  print(_scrubbingPosition);
-                  setState(() {
-                    _isScrubbing = true;
-                    _scrubbingPosition = Duration(milliseconds: value.toInt());
-                    widget.controller.seekTo(_scrubbingPosition);
-                  });
-                },
-                onChangeEnd: (value) {
-                  print(_isScrubbing);
-                  print(_scrubbingPosition);
-                  setState(() {
-                    _isScrubbing = false;
-                  });
-                },
-                min: 0,
-                max: widget.controller.value.duration.inMilliseconds.toDouble(),
-                activeColor: Colors.transparent,
-                inactiveColor: Colors.transparent,
-              );
-            },
-          ),
-          Positioned(
-            bottom: 30, // Increase the bottom position
-            left: 0,
-            right: 0,
-            child: Center(
+    return LayoutBuilder(
+      builder: (context, constraints) {
+          return Column(
+          children: [
+          if (_isScrubbing)
+            Container(
+              alignment: Alignment.centerLeft,
+              padding: EdgeInsets.only(left: _calculateLeftPosition(constraints.maxWidth)), // Adjust this value to position the widget
               child: Container(
+                key: _timeKey,
                 padding: EdgeInsets.all(8),
-                color: Colors.black.withOpacity(0.7), // Add a background color
+                decoration: BoxDecoration(
+                  color: Colors.black.withOpacity(0.7), // Add a background color
+                  borderRadius: BorderRadius.circular(8),  // Rounded edges
+                ),
                 child: Text(
-                  "Time goes here",
-                  style: TextStyle(color: Colors.white),
+                  _formatDuration(_scrubbingPosition, widget.controller.value.duration),
+                  style: TextStyle(color: Colors.white, fontSize: 12), // Adjust the font size here
                 ),
               ),
             ),
-          ),
-        ],
-      ),
+            ValueListenableBuilder<Duration>(
+              valueListenable: widget.videoPosition,
+              builder: (context, position, child) {
+                return SliderTheme(
+                  data: SliderTheme.of(context).copyWith(
+                    trackHeight: 5, // Adjust as needed
+                    thumbShape: RoundSliderThumbShape(enabledThumbRadius: 6), // Adjust as needed
+                    overlayShape: RoundSliderOverlayShape(overlayRadius: 10), // Adjust as needed
+                    thumbColor: Colors.blue,
+                    activeTrackColor: Colors.blue,
+                    inactiveTrackColor: Colors.grey,
+                    overlayColor: Colors.blue.withOpacity(0.2),
+                  ),
+                  child: Slider(
+                    value: position.inMilliseconds.toDouble(),
+                    onChanged: (value) {
+                      print(_isScrubbing);
+                      setState(() {
+                        _isScrubbing = true;
+                        _scrubbingPosition = Duration(milliseconds: value.toInt());
+                        widget.controller.seekTo(_scrubbingPosition);
+                        _thumbPosition = (value / widget.controller.value.duration.inMilliseconds) * constraints.maxWidth;
+                      });
+                    },
+                    onChangeEnd: (value) {
+                      setState(() {
+                        _isScrubbing = false;
+                      });
+                    },
+                    min: 0,
+                    max: widget.controller.value.duration.inMilliseconds.toDouble(),
+                    activeColor: Colors.blue, // Set to transparent since we're using SliderTheme
+                    inactiveColor: Colors.grey, // Set to transparent since we're using SliderTheme
+                  ),
+                );
+              },
+            ),
+          ],
+        );
+      },
     );
   }
+
+double _calculateLeftPosition(double maxWidth) {
+  if (_timeKey.currentContext == null) {
+    return 0.0; // Default value if the context is not available
+  }
+
+  final RenderBox renderBox = _timeKey.currentContext!.findRenderObject() as RenderBox;
+  final timeWidth = renderBox.size.width;
+
+  // Calculate the position of the slider thumb
+  double thumbPosition = (widget.controller.value.position.inMilliseconds / widget.controller.value.duration.inMilliseconds) * maxWidth;
+
+  double left = thumbPosition - timeWidth / 2;
+  if (left < 0) {
+    left = 0;
+  } else if (left + timeWidth > maxWidth) {
+    left = maxWidth - timeWidth;
+  }
+
+  return left;
 }
 
-class _CustomVideoProgressBarState1 extends State<CustomVideoProgressBar> {
-  bool _isScrubbing = false;
-  Duration _scrubbingPosition = Duration.zero;
+String _formatDuration(Duration elapsed, Duration total) {
+  final elapsedMinutes = elapsed.inMinutes;
+  final elapsedSeconds = elapsed.inSeconds % 60;
+  final totalMinutes = total.inMinutes;
+  final totalSeconds = total.inSeconds % 60;
 
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onHorizontalDragStart: (details) {
-        print(_isScrubbing);
-        print(_scrubbingPosition);
-        setState(() {
-          _isScrubbing = true;
-          _scrubbingPosition = widget.controller.value.position;
-        });
-      },
-      onHorizontalDragUpdate: (details) {
-        final delta = details.primaryDelta ?? 0;
-        final totalDuration = widget.controller.value.duration.inMilliseconds;
-        final newPosition = _scrubbingPosition.inMilliseconds +
-            (totalDuration * delta / context.size!.width).round();
-        setState(() {
-          _scrubbingPosition =
-              Duration(milliseconds: newPosition.clamp(0, totalDuration));
-        });
-      },
-      onHorizontalDragEnd: (details) {
-        widget.controller.seekTo(_scrubbingPosition);
-        setState(() {
-          _isScrubbing = false;
-        });
-      },
-      child: Stack(
-        children: [
-          VideoProgressIndicator(
-            widget.controller,
-            allowScrubbing: true,
-            padding: EdgeInsets.all(0),
-            colors: VideoProgressColors(
-              playedColor: Colors.blue,
-              bufferedColor: Colors.grey,
-              backgroundColor: Colors.black,
-            ),
-          ),
-          if (_isScrubbing)
-            Positioned(
-              bottom: 30, // Increase the bottom position
-              left: 0,
-              right: 0,
-              child: Center(
-                child: Container(
-                  padding: EdgeInsets.all(8),
-                  color:
-                      Colors.black.withOpacity(0.7), // Add a background color
-                  child: Text(
-                    "${_formatDuration(_scrubbingPosition)} / ${_formatDuration(widget.controller.value.duration)}",
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ),
-              ),
-            ),
-        ],
-      ),
-    );
-  }
-
-  String _formatDuration(Duration duration) {
-    final minutes = duration.inMinutes;
-    final seconds = duration.inSeconds % 60;
-    return "$minutes:${seconds.toString().padLeft(2, '0')}";
-  }
+  return "$elapsedMinutes:${elapsedSeconds.toString().padLeft(2, '0')} / $totalMinutes:${totalSeconds.toString().padLeft(2, '0')}";
+}
 }
