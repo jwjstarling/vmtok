@@ -37,6 +37,8 @@ class ContentfulSync {
           String type = item['sys']['type'];
           String id = item['sys']['id'];
 
+          //Do DeletedAssets aswell
+
           if (type == 'DeletedEntry') {
             // Remove the deleted entry from the content
             print("Deleted entry: $id");

@@ -52,7 +52,15 @@ class _VideoPlayerScreenState extends ConsumerState<VideoPlayerScreen> {
     List<Map<String, String>> videos = [];
     // Find the video collection
     var videoCollection = widget.content.firstWhere(
-        (item) => item['sys']['contentType']['sys']['id'] == 'videoCollection');
+      (item) {
+        return item != null &&
+            item.containsKey('sys') &&
+            item['sys'].containsKey('contentType') &&
+            item['sys']['contentType'].containsKey('sys') &&
+            item['sys']['contentType']['sys']['id'] == 'videoCollection';
+      },
+      orElse: () => null,
+    );
     var videoList = videoCollection['fields']['videoCollectionList']['en-US'];
 
     // Loop through the videos to get the video information and video URL
@@ -234,6 +242,41 @@ class _CustomVideoProgressBarState extends State<CustomVideoProgressBar> {
               backgroundColor: Colors.black,
             ),
           ),
+          Positioned.fill(
+            // <-- Cover the entire area of the Stack
+            child: GestureDetector(
+              onHorizontalDragStart: (details) {
+                print(_isScrubbing);
+                print(_scrubbingPosition);
+                print("Start Scrubbing");
+                setState(() {
+                  _isScrubbing = true;
+                  _scrubbingPosition = widget.controller.value.position;
+                });
+              },
+              onHorizontalDragUpdate: (details) {
+                final delta = details.primaryDelta ?? 0;
+                final totalDuration =
+                    widget.controller.value.duration.inMilliseconds;
+                final newPosition = _scrubbingPosition.inMilliseconds +
+                    (totalDuration * delta / context.size!.width).round();
+                print(newPosition);
+                setState(() {
+                  _scrubbingPosition = Duration(
+                      milliseconds: newPosition.clamp(0, totalDuration));
+                });
+              },
+              onHorizontalDragEnd: (details) {
+                print(_isScrubbing);
+                widget.controller.seekTo(_scrubbingPosition);
+                setState(() {
+                  _isScrubbing = false;
+                });
+              },
+              child: Container(
+                  color: Colors.transparent), // <-- Transparent container
+            ),
+          ),
           Positioned(
             bottom: 30, // Increase the bottom position
             left: 0,
@@ -252,6 +295,12 @@ class _CustomVideoProgressBarState extends State<CustomVideoProgressBar> {
         ],
       ),
     );
+  }
+
+  String _formatDuration(Duration duration) {
+    final minutes = duration.inMinutes;
+    final seconds = duration.inSeconds % 60;
+    return "$minutes:${seconds.toString().padLeft(2, '0')}";
   }
 }
 

@@ -25,7 +25,7 @@ class _MainScreenState extends ConsumerState<MainScreen> {
   }
 
   Widget build(BuildContext context) {
-    final contentAsyncValue = ref.watch(contentProvider);
+    final contentAsyncValue = ref.watch(contentProviderSP);
 
     return contentAsyncValue.when(
       data: (content) {

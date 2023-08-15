@@ -15,7 +15,7 @@ Future<User?> signInAnonymously() async {
 class LoginPage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final contentAsyncValue = ref.watch(contentProvider);
+    final contentAsyncValue = ref.watch(contentProviderSP);
 
     return Scaffold(
       body: Center(
