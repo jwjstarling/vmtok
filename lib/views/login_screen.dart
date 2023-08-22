@@ -15,7 +15,7 @@ Future<User?> signInAnonymously() async {
 class LoginPage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final contentAsyncValue = ref.watch(contentProviderSP);
+    //final contentAsyncValue = ref.watch(contentProviderSP);
 
     return Scaffold(
       body: Center(
@@ -23,7 +23,8 @@ class LoginPage extends ConsumerWidget {
           child: const Text('Sign in anonymously'),
           onPressed: () async {
             User? user = await signInAnonymously();
-            if (user != null && contentAsyncValue is AsyncData) {
+            //if (user != null && contentAsyncValue is AsyncData) {
+            if (user != null) {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
