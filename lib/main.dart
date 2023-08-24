@@ -2,10 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'views/login_screen.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:contentful_sync/classes/content_model.dart';
-import 'package:contentful_sync/classes/contentful_client.dart';
-import 'package:contentful_sync/classes/local_store.dart';
-import 'package:contentful_sync/classes/synchronization_manager.dart';
+import 'package:contentful_sync/contentful_sync.dart';
 import 'classes/content_classes.dart';
 
 final localStore = LocalStore();
@@ -13,8 +10,8 @@ final localStore = LocalStore();
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  final contentfulClient =
-      ContentfulClient('YOUR_SPACE_ID', 'YOUR_ACCESS_TOKEN');
+  final contentfulClient = ContentfulClient(
+      '5n0lh0o2t6d6', 'Z9nJXTEddwrQXb6LrCB_NesqS9FPqtRevSgBm6PYRcE');
 
   await localStore.open(); // Open the database
   final syncManager = SynchronizationManager(contentfulClient, localStore);
@@ -26,6 +23,7 @@ void main() async {
   syncManager.registerContentModel('Asset', Asset.fromContentful);
 
   await syncManager.initialSync();
+  await localStore.printAllTables();
   await displayVideoDetails("Collection of Vids for VM Tok App");
 
   runApp(ProviderScope(child: MyApp()));

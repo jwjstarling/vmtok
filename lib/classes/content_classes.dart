@@ -1,6 +1,9 @@
-class VideoCollection {
+import 'dart:convert';
+
+import 'package:contentful_sync/classes/content_model.dart';
+
+class VideoCollection implements ContentModel {
   final String id;
-  final String localeCode;
   final DateTime createdAt;
   final DateTime updatedAt;
   final String videoCollectionTitle;
@@ -8,7 +11,6 @@ class VideoCollection {
 
   VideoCollection({
     required this.id,
-    required this.localeCode,
     required this.createdAt,
     required this.updatedAt,
     required this.videoCollectionTitle,
@@ -18,7 +20,6 @@ class VideoCollection {
   static VideoCollection fromContentful(Map<String, dynamic> entry) {
     return VideoCollection(
       id: entry['sys']['id'],
-      localeCode: entry['sys']['locale'],
       createdAt: DateTime.parse(entry['sys']['createdAt']),
       updatedAt: DateTime.parse(entry['sys']['updatedAt']),
       videoCollectionTitle: entry['fields']['videoCollectionTitle']['en-US'],
@@ -32,18 +33,27 @@ class VideoCollection {
   static VideoCollection fromMap(Map<String, dynamic> map) {
     return VideoCollection(
       id: map['id'],
-      localeCode: map['localeCode'],
       createdAt: DateTime.parse(map['createdAt']),
       updatedAt: DateTime.parse(map['updatedAt']),
       videoCollectionTitle: map['videoCollectionTitle'],
-      videoCollectionList: List<String>.from(map['videoCollectionList']),
+      videoCollectionList:
+          List<String>.from(jsonDecode(map['videoCollectionList'])),
     );
+  }
+
+  Map<String, dynamic> toMap() {
+    return {
+      'id': id,
+      'createdAt': createdAt.toIso8601String(),
+      'updatedAt': updatedAt.toIso8601String(),
+      'videoCollectionTitle': videoCollectionTitle,
+      'videoCollectionList': jsonEncode(videoCollectionList),
+    };
   }
 }
 
-class VideoPost {
+class VideoPost implements ContentModel {
   final String id;
-  final String localeCode;
   final DateTime createdAt;
   final DateTime updatedAt;
   final String videoTitle;
@@ -52,7 +62,6 @@ class VideoPost {
 
   VideoPost({
     required this.id,
-    required this.localeCode,
     required this.createdAt,
     required this.updatedAt,
     required this.videoTitle,
@@ -63,7 +72,6 @@ class VideoPost {
   static VideoPost fromContentful(Map<String, dynamic> entry) {
     return VideoPost(
       id: entry['sys']['id'],
-      localeCode: entry['sys']['locale'],
       createdAt: DateTime.parse(entry['sys']['createdAt']),
       updatedAt: DateTime.parse(entry['sys']['updatedAt']),
       videoTitle: entry['fields']['videoTitle']['en-US'],
@@ -74,20 +82,29 @@ class VideoPost {
 
   static VideoPost fromMap(Map<String, dynamic> map) {
     return VideoPost(
-      id: map['sys']['id'],
-      localeCode: map['sys']['locale'],
-      createdAt: DateTime.parse(map['sys']['createdAt']),
-      updatedAt: DateTime.parse(map['sys']['updatedAt']),
-      videoTitle: map['fields']['videoTitle']['en-US'],
-      videoFileId: map['fields']['videoFile']['en-US']['sys']['id'],
-      videoDescription: map['fields']['videoDescription']['en-US'],
+      id: map['id'],
+      createdAt: DateTime.parse(map['createdAt']),
+      updatedAt: DateTime.parse(map['updatedAt']),
+      videoTitle: map['videoTitle'],
+      videoFileId: map['videoFileId'],
+      videoDescription: map['videoDescription'],
     );
+  }
+
+  Map<String, dynamic> toMap() {
+    return {
+      'id': id,
+      'createdAt': createdAt.toIso8601String(),
+      'updatedAt': updatedAt.toIso8601String(),
+      'videoTitle': videoTitle,
+      'videoFileId': videoFileId,
+      'videoDescription': videoDescription,
+    };
   }
 }
 
-class Asset {
+class Asset implements ContentModel {
   final String id;
-  final String localeCode;
   final DateTime createdAt;
   final DateTime updatedAt;
   final String title;
@@ -95,7 +112,6 @@ class Asset {
 
   Asset({
     required this.id,
-    required this.localeCode,
     required this.createdAt,
     required this.updatedAt,
     required this.title,
@@ -105,7 +121,6 @@ class Asset {
   static Asset fromContentful(Map<String, dynamic> entry) {
     return Asset(
       id: entry['sys']['id'],
-      localeCode: entry['sys']['locale'],
       createdAt: DateTime.parse(entry['sys']['createdAt']),
       updatedAt: DateTime.parse(entry['sys']['updatedAt']),
       title: entry['fields']['title']['en-US'],
@@ -116,11 +131,20 @@ class Asset {
   static Asset fromMap(Map<String, dynamic> map) {
     return Asset(
       id: map['id'],
-      localeCode: map['localeCode'],
       createdAt: DateTime.parse(map['createdAt']),
       updatedAt: DateTime.parse(map['updatedAt']),
       title: map['title'],
       url: map['url'],
     );
+  }
+
+  Map<String, dynamic> toMap() {
+    return {
+      'id': id,
+      'createdAt': createdAt.toIso8601String(),
+      'updatedAt': updatedAt.toIso8601String(),
+      'title': title,
+      'url': url,
+    };
   }
 }

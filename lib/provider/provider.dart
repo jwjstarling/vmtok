@@ -1,13 +1,12 @@
 // providers.dart
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-//import '../services/content_sync.dart';
+import '../services/content_sync.dart';
 //import '../services/content_hive_sync.dart';
-//import 'package:contentful_sync/contentful_sync.dart';
+import 'package:contentful_sync/contentful_sync.dart';
 import 'package:contentful_sync/classes/content_model.dart';
 import 'package:contentful_sync/classes/contentful_client.dart';
 import 'package:contentful_sync/classes/local_store.dart';
 import 'package:contentful_sync/classes/synchronization_manager.dart';
-
 
 class LanguageNotifier extends StateNotifier<String> {
   LanguageNotifier() : super('en-US'); // Default language
@@ -20,8 +19,6 @@ class LanguageNotifier extends StateNotifier<String> {
 final languageProvider = StateNotifierProvider<LanguageNotifier, String>(
   (ref) => LanguageNotifier(),
 );
-
-
 
 /**
 final contentProvider = FutureProvider<List<dynamic>>((ref) async {
@@ -39,7 +36,7 @@ final contentProvider = FutureProvider<List<dynamic>>((ref) async {
   //return contentfulSync.getContent();
 });
 
-
+ */
 final contentProviderSP = FutureProvider<List<dynamic>>((ref) async {
   // uses shared prefs for storage
   final stopwatch = Stopwatch()..start();
@@ -56,4 +53,3 @@ final contentProviderSP = FutureProvider<List<dynamic>>((ref) async {
   return allContent;
   //return contentfulSync.getContent();
 });
- */
