@@ -37,8 +37,6 @@ dependencies:
   firebase_core: ^2.15.0
   cloud_firestore: ^4.8.4
   firebase_auth: ^4.7.2
-  contentful_sync:
-    path: ../Packages/contentful_sync
 
 
   # The following adds the Cupertino Icons font to your application.

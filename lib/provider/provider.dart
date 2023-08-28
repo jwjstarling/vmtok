@@ -1,7 +1,7 @@
 // providers.dart
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-//import '../services/content_sync.dart';
-import 'package:contentful_sync/contentful_sync.dart';
+import '../services/content_sync.dart';
+//import 'package:contentful_sync/contentful_sync.dart';
 
 class LanguageNotifier extends StateNotifier<String> {
   LanguageNotifier() : super('en-US'); // Default language
