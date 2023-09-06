@@ -25,47 +25,35 @@ class _MainScreenState extends ConsumerState<MainScreen> {
   }
 
   Widget build(BuildContext context) {
-    final contentAsyncValue = ref.watch(contentProviderSP);
-
-    return contentAsyncValue.when(
-      data: (content) {
-        return Scaffold(
-          extendBodyBehindAppBar: true, // Extend the body behind the AppBar
-          appBar: AppBar(
-            backgroundColor: Colors.transparent, // Make AppBar transparent
-            elevation: 0, // Remove shadow
-            title: Text('VMTok'),
-          ),
-          body: IndexedStack(
-            index: _currentIndex,
-            children: [
-              VideoPlayerScreen(
-                content: content,
-                isVideoTabActive: widget.isVideoTabActive,
-              ), // Pass the content here
-              ProfileScreen(), // You can create this screen as needed
-              SettingsScreen(),
-            ],
-          ),
-          bottomNavigationBar: CupertinoTabBar(
-            currentIndex: _currentIndex,
-            onTap: (index) {
-              setState(() {
-                _currentIndex = index;
-                widget.isVideoTabActive.value =
-                    index == 0; // Update the notifier value
-              });
-            },
-            items: [
-              BottomNavigationBarItem(icon: Icon(Icons.home)),
-              BottomNavigationBarItem(icon: Icon(Icons.person)),
-              BottomNavigationBarItem(icon: Icon(Icons.settings)),
-            ],
-          ),
-        );
-      },
-      loading: () => CircularProgressIndicator(), // Handle loading state
-      error: (error, stack) => Text('An error occurred'), // Handle error state
+    return Scaffold(
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        title: Text('VMTok'),
+      ),
+      body: IndexedStack(
+        index: _currentIndex,
+        children: [
+          VideoPlayerScreen(isVideoTabActive: widget.isVideoTabActive),
+          ProfileScreen(),
+          SettingsScreen(),
+        ],
+      ),
+      bottomNavigationBar: CupertinoTabBar(
+        currentIndex: _currentIndex,
+        onTap: (index) {
+          setState(() {
+            _currentIndex = index;
+            widget.isVideoTabActive.value = index == 0;
+          });
+        },
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home)),
+          BottomNavigationBarItem(icon: Icon(Icons.person)),
+          BottomNavigationBarItem(icon: Icon(Icons.settings)),
+        ],
+      ),
     );
   }
 }

@@ -36,7 +36,7 @@ final contentProvider = FutureProvider<List<dynamic>>((ref) async {
   //return contentfulSync.getContent();
 });
 
- */
+
 final contentProviderSP = FutureProvider<List<dynamic>>((ref) async {
   // uses shared prefs for storage
   final stopwatch = Stopwatch()..start();
@@ -52,4 +52,6 @@ final contentProviderSP = FutureProvider<List<dynamic>>((ref) async {
       'Shared Preferences processes - elapsed ${stopwatch.elapsedMilliseconds} ms');
   return allContent;
   //return contentfulSync.getContent();
+  
 });
+ */

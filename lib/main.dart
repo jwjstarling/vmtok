@@ -21,10 +21,11 @@ void main() async {
   syncManager.registerContentModel(
       'videoCollection', (data) => VideoCollection.fromContentful(data));
   syncManager.registerContentModel('Asset', Asset.fromContentful);
+  syncManager.registerContentModel('pageContent', (data) => PageContent.fromContentful(data));
 
   await syncManager.initialSync();
   await localStore.printAllTables();
-  await displayVideoDetails("Collection of Vids for VM Tok App");
+  //await displayVideoDetails("Collection of Vids for VM Tok App");
 
   runApp(ProviderScope(child: MyApp()));
 }
@@ -33,23 +34,10 @@ Future<VideoCollection?> fetchVideoCollectionByTitle(String title) async {
   final results = await localStore.queryByField(
       'VideoCollection', 'videoCollectionTitle', title);
   if (results.isNotEmpty) {
+    print('Results from fetchVideoCollectionByTitle: $results');
     return VideoCollection.fromMap(results.first);
   }
   return null;
-}
-
-Future<List<VideoPost>> fetchVideoPostsForCollection(
-    VideoCollection collection) async {
-  final List<VideoPost> videoPosts = [];
-  for (var postId in collection.videoCollectionList) {
-    final results = await localStore.fetch('VideoPost');
-    results.forEach((map) {
-      if (map['id'] == postId) {
-        videoPosts.add(VideoPost.fromMap(map));
-      }
-    });
-  }
-  return videoPosts;
 }
 
 Future<void> displayVideoDetails(String collectionTitle) async {
@@ -66,9 +54,25 @@ Future<void> displayVideoDetails(String collectionTitle) async {
   }
 }
 
+Future<List<VideoPost>> fetchVideoPostsForCollection(
+    VideoCollection collection) async {
+  final List<VideoPost> videoPosts = [];
+  for (var postId in collection.videoCollectionList) {
+    final results = await localStore.fetch('VideoPost');
+    results.forEach((map) {
+      if (map['id'] == postId) {
+        videoPosts.add(VideoPost.fromMap(map));
+      }
+    });
+  }
+  print('Results from fetchVideoPostsForCollection: $videoPosts');
+  return videoPosts;
+}
+
 Future<Asset?> fetchAssetById(String assetId) async {
   final results = await localStore.queryByField('Asset', 'id', assetId);
   if (results.isNotEmpty) {
+    print('Results from fetchAssetById: $results');
     return Asset.fromMap(results.first);
   }
   return null;
