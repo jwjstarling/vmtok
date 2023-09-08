@@ -1,11 +1,13 @@
 import 'dart:convert';
 
 import 'package:contentful_sync/classes/content_model.dart';
+import 'rich_content_classes.dart';
 
 class PageContentLabelCollection implements ContentModel {
   final String id;
   final DateTime createdAt;
   final DateTime updatedAt;
+
   final List<ContentLabel> contentLabels; // List of ContentLabel objects
 
   PageContentLabelCollection({
@@ -82,13 +84,16 @@ class PageContent implements ContentModel {
   final String id;
   final DateTime createdAt;
   final DateTime updatedAt;
+  final String pageId;
   final List<String> pageContentLabels;
-  final List<String> pageStructuredContentCollection; // List of structured content IDs
+  final List<String>
+      pageStructuredContentCollection; // List of structured content IDs
 
   PageContent({
     required this.id,
     required this.createdAt,
     required this.updatedAt,
+    required this.pageId,
     required this.pageContentLabels,
     required this.pageStructuredContentCollection,
   });
@@ -98,6 +103,7 @@ class PageContent implements ContentModel {
       id: entry['sys']['id'],
       createdAt: DateTime.parse(entry['sys']['createdAt']),
       updatedAt: DateTime.parse(entry['sys']['updatedAt']),
+      pageId: entry['fields']['pageId']['en-US'],
       pageContentLabels:
           (entry['fields']['pageContentLabelCollection']['en-US'] as List)
               .map((e) => e['sys']['id'] as String)
@@ -114,6 +120,7 @@ class PageContent implements ContentModel {
       id: map['id'],
       createdAt: DateTime.parse(map['createdAt']),
       updatedAt: DateTime.parse(map['updatedAt']),
+      pageId: map['pageId'],
       pageContentLabels:
           List<String>.from(jsonDecode(map['pageContentLabelCollection'])),
       pageStructuredContentCollection:
@@ -126,8 +133,10 @@ class PageContent implements ContentModel {
       'id': id,
       'createdAt': createdAt.toIso8601String(),
       'updatedAt': updatedAt.toIso8601String(),
+      'pageId': pageId,
       'pageContentLabelCollection': jsonEncode(pageContentLabels),
-      'pageStructuredContentCollection': jsonEncode(pageStructuredContentCollection),
+      'pageStructuredContentCollection':
+          jsonEncode(pageStructuredContentCollection),
     };
   }
 }
@@ -186,20 +195,28 @@ class CallToAction implements ContentModel {
   final String id;
   final DateTime createdAt;
   final DateTime updatedAt;
-  // Add other fields specific to CallToAction
+  final String callToActionText;
+  final String callToActionId;
+  final List<String> callToActionStyle;
 
-  CallToAction({
-    required this.id,
-    required this.createdAt,
-    required this.updatedAt,
-    // Initialize other fields here
-  });
+  CallToAction(
+      {required this.id,
+      required this.createdAt,
+      required this.updatedAt,
+      required this.callToActionText,
+      required this.callToActionId,
+      required this.callToActionStyle});
 
   static CallToAction fromContentful(Map<String, dynamic> entry) {
     return CallToAction(
       id: entry['sys']['id'],
       createdAt: DateTime.parse(entry['sys']['createdAt']),
       updatedAt: DateTime.parse(entry['sys']['updatedAt']),
+      callToActionText: entry['fields']['callToActionText']['en-US'],
+      callToActionId: entry['fields']['callToActionId']['en-US'],
+      callToActionStyle: List<String>.from(entry['fields']['callToActionStyle']
+          ['en-US']), // Assuming there's a link field
+
       // Extract other fields from the entry
     );
   }
@@ -209,6 +226,10 @@ class CallToAction implements ContentModel {
       id: map['id'],
       createdAt: DateTime.parse(map['createdAt']),
       updatedAt: DateTime.parse(map['updatedAt']),
+      callToActionText: map['callToActionText'],
+      callToActionId: map['callToActionId'],
+      callToActionStyle:
+          List<String>.from(jsonDecode(map['callToActionStyle'])),
       // Extract other fields from the map
     );
   }
@@ -218,6 +239,9 @@ class CallToAction implements ContentModel {
       'id': id,
       'createdAt': createdAt.toIso8601String(),
       'updatedAt': updatedAt.toIso8601String(),
+      'callToActionText': callToActionText,
+      'callToActionId': callToActionId,
+      'callToActionStyle': jsonEncode(callToActionStyle),
       // Add other fields to the map
     };
   }
@@ -344,10 +368,9 @@ class FAQCollections implements ContentModel {
       updatedAt: DateTime.parse(entry['sys']['updatedAt']),
       collectionsTitle: entry['fields']['collectionsTitle']['en-US'],
       collectionsId: entry['fields']['collectionsId']['en-US'],
-      faqCollections:
-          (entry['fields']['faqCollections']['en-US'] as List)
-              .map((e) => e['sys']['id'] as String)
-              .toList(),
+      faqCollections: (entry['fields']['faqCollections']['en-US'] as List)
+          .map((e) => e['sys']['id'] as String)
+          .toList(),
     );
   }
 
@@ -394,8 +417,8 @@ class FAQCollection implements ContentModel {
       id: entry['sys']['id'],
       createdAt: DateTime.parse(entry['sys']['createdAt']),
       updatedAt: DateTime.parse(entry['sys']['updatedAt']),
-      faqCollectionTitle: entry['fields']['faqCollectionTitle'],
-      faqs: (entry['fields']['faqs'] as List)
+      faqCollectionTitle: entry['fields']['faqCollectionTitle']['en-US'],
+      faqs: (entry['fields']['faqs']['en-US'] as List)
           .map((faq) => FAQItem.fromContentful(faq))
           .toList(),
     );
@@ -407,9 +430,7 @@ class FAQCollection implements ContentModel {
       createdAt: DateTime.parse(map['createdAt']),
       updatedAt: DateTime.parse(map['updatedAt']),
       faqCollectionTitle: map['faqCollectionTitle'],
-      faqs: (map['faqs'] as List)
-          .map((faq) => FAQItem.fromMap(faq))
-          .toList(),
+      faqs: (map['faqs'] as List).map((faq) => FAQItem.fromMap(faq)).toList(),
     );
   }
 
@@ -424,239 +445,143 @@ class FAQCollection implements ContentModel {
   }
 }
 
-class FAQItem {
+class FAQItem implements ContentModel {
+  final String id;
+  final DateTime createdAt;
+  final DateTime updatedAt;
   final String faqTitle;
   final RichText faqBody;
 
   FAQItem({
+    required this.id,
+    required this.createdAt,
+    required this.updatedAt,
     required this.faqTitle,
     required this.faqBody,
   });
 
   static FAQItem fromContentful(Map<String, dynamic> entry) {
     return FAQItem(
-      faqTitle: entry['fields']['faqTitle'],
-      faqBody: RichText.fromContentful(entry['fields']['faqBody']),
+      id: entry['sys']['id'],
+      createdAt: DateTime.parse(entry['sys']['createdAt']),
+      updatedAt: DateTime.parse(entry['sys']['updatedAt']),
+      faqTitle: entry['fields']['faqTitle']['en-US'],
+      faqBody: RichText.fromContentful(entry['fields']['faqBody']['en-US']),
     );
   }
 
   static FAQItem fromMap(Map<String, dynamic> map) {
     return FAQItem(
-      faqTitle: map['faqTitle'],
-      faqBody: RichText.fromMap(map['faqBody']),
+      id: map['id'],
+      createdAt: DateTime.parse(map['createdAt']),
+      updatedAt: DateTime.parse(map['updatedAt']),
+      faqTitle: map['faqTitle']['en-US'],
+      faqBody: RichText.fromMap(jsonDecode(map['faqBody'])),
     );
   }
 
   Map<String, dynamic> toMap() {
     return {
+      'id': id,
+      'createdAt': createdAt.toIso8601String(),
+      'updatedAt': updatedAt.toIso8601String(),
       'faqTitle': faqTitle,
-      'faqBody': faqBody.toMap(),
+      'faqBody': jsonEncode(faqBody.toMap()),
     };
   }
 }
 
-abstract class RichTextNode {
-  final String nodeType;
-  final Map<String, dynamic> data;
-  final List<RichTextNode> content;
+class TileCollection implements ContentModel {
+  final String id;
+  final DateTime createdAt;
+  final DateTime updatedAt;
+  final String collectionTitle;
+  final List<String> collectionContent; // List of Tile IDs
 
-  RichTextNode(this.nodeType, this.data, this.content);
+  TileCollection({
+    required this.id,
+    required this.createdAt,
+    required this.updatedAt,
+    required this.collectionTitle,
+    required this.collectionContent,
+  });
 
-  factory RichTextNode.fromMap(Map<String, dynamic> map) {
-    switch (map['nodeType']) {
-      case 'heading-1':
-      case 'heading-2':
-      case 'heading-3':
-      case 'heading-4':
-      case 'heading-5':
-      case 'heading-6':
-      case 'paragraph':
-      case 'blockquote':
-        return RichTextBlock.fromMap(map);
-      case 'unordered-list':
-      case 'ordered-list':
-        return RichTextList.fromMap(map);
-      case 'list-item':
-        return RichTextListItem.fromMap(map);
-      case 'hyperlink':
-        return RichTextHyperlink.fromMap(map);
-      case 'hr':
-        return RichTextHorizontalRule.fromMap(map);
-      case 'text':
-        return RichTextLeaf.fromMap(map);
-      default:
-        throw Exception('Unknown nodeType: ${map['nodeType']}');
-    }
-  }
-
-  Map<String, dynamic> toMap();
-}
-
-class RichTextBlock extends RichTextNode {
-  RichTextBlock(String nodeType, Map<String, dynamic> data, List<RichTextNode> content)
-      : super(nodeType, data, content);
-
-  static RichTextBlock fromMap(Map<String, dynamic> map) {
-    return RichTextBlock(
-      map['nodeType'],
-      map['data'],
-      (map['content'] as List).map((e) => RichTextNode.fromMap(e)).toList(),
-    );
-  }
-  
-  @override
-  Map<String, dynamic> toMap() {
-    return {
-      'nodeType': nodeType,
-      'data': data,
-      'content': content.map((e) => e.toMap()).toList(),
-    };
-  }
-}
-
-class RichTextList extends RichTextNode {
-  RichTextList(String nodeType, Map<String, dynamic> data, List<RichTextNode> content)
-      : super(nodeType, data, content);
-
-  static RichTextList fromMap(Map<String, dynamic> map) {
-    return RichTextList(
-      map['nodeType'],
-      map['data'],
-      (map['content'] as List).map((e) => RichTextNode.fromMap(e)).toList(),
+  static TileCollection fromContentful(Map<String, dynamic> entry) {
+    return TileCollection(
+      id: entry['sys']['id'],
+      createdAt: DateTime.parse(entry['sys']['createdAt']),
+      updatedAt: DateTime.parse(entry['sys']['updatedAt']),
+      collectionTitle: entry['fields']['collectionTitle']['en-US'],
+      collectionContent: (entry['fields']['collectionContent']['en-US'] as List)
+          .map((e) => e['sys']['id'] as String)
+          .toList(),
     );
   }
 
-    @override
-  Map<String, dynamic> toMap() {
-    return {
-      'nodeType': nodeType,
-      'data': data,
-      'content': content.map((e) => e.toMap()).toList(),
-    };
-  }
-}
-
-class RichTextListItem extends RichTextNode {
-  RichTextListItem(String nodeType, Map<String, dynamic> data, List<RichTextNode> content)
-      : super(nodeType, data, content);
-
-  static RichTextListItem fromMap(Map<String, dynamic> map) {
-    return RichTextListItem(
-      map['nodeType'],
-      map['data'],
-      (map['content'] as List).map((e) => RichTextNode.fromMap(e)).toList(),
-    );
-  }
-
-    @override
-  Map<String, dynamic> toMap() {
-    return {
-      'nodeType': nodeType,
-      'data': data,
-      'content': content.map((e) => e.toMap()).toList(),
-    };
-  }
-}
-
-class RichTextHyperlink extends RichTextNode {
-  RichTextHyperlink(String nodeType, Map<String, dynamic> data, List<RichTextNode> content)
-      : super(nodeType, data, content);
-
-  static RichTextHyperlink fromMap(Map<String, dynamic> map) {
-    return RichTextHyperlink(
-      map['nodeType'],
-      map['data'],
-      (map['content'] as List).map((e) => RichTextNode.fromMap(e)).toList(),
-    );
-  }
-
-    @override
-  Map<String, dynamic> toMap() {
-    return {
-      'nodeType': nodeType,
-      'data': data,
-      'content': content.map((e) => e.toMap()).toList(),
-    };
-  }
-}
-
-class RichTextHorizontalRule extends RichTextNode {
-  RichTextHorizontalRule(String nodeType, Map<String, dynamic> data, List<RichTextNode> content)
-      : super(nodeType, data, content);
-
-  static RichTextHorizontalRule fromMap(Map<String, dynamic> map) {
-    return RichTextHorizontalRule(
-      map['nodeType'],
-      map['data'],
-      (map['content'] as List).map((e) => RichTextNode.fromMap(e)).toList(),
-    );
-  }
-
-    @override
-  Map<String, dynamic> toMap() {
-    return {
-      'nodeType': nodeType,
-      'data': data,
-      'content': content.map((e) => e.toMap()).toList(),
-    };
-  }
-}
-
-class RichTextLeaf extends RichTextNode {
-  final String value;
-  final List<Map<String, dynamic>> marks;
-
-  RichTextLeaf(String nodeType, Map<String, dynamic> data, List<RichTextNode> content, this.value, this.marks)
-      : super(nodeType, data, content);
-
-  static RichTextLeaf fromMap(Map<String, dynamic> map) {
-    return RichTextLeaf(
-      map['nodeType'],
-      map['data'],
-      [],
-      map['value'],
-      (map['marks'] as List).cast<Map<String, dynamic>>(),
-    );
-  }
-
-  @override
-  Map<String, dynamic> toMap() {
-    return {
-      'nodeType': nodeType,
-      'data': data,
-      'value': value,
-      'marks': marks,
-    };
-  }
-}
-
-class RichText {
-  final RichTextNode document;
-
-  RichText(this.document);
-
-  static RichText fromContentful(Map<String, dynamic> entry) {
-    return RichText(
-      RichTextNode.fromMap(entry['fields']['richTextField']['en-US']),
-    );
-  }
-
-     static RichText fromMap(Map<String, dynamic> map) {
-    return RichText(
-      RichTextBlock.fromMap(map['fields']['richTextField']['en-US']),
+  static TileCollection fromMap(Map<String, dynamic> map) {
+    return TileCollection(
+      id: map['id'],
+      createdAt: DateTime.parse(map['createdAt']),
+      updatedAt: DateTime.parse(map['updatedAt']),
+      collectionTitle: map['collectionTitle'],
+      collectionContent:
+          List<String>.from(jsonDecode(map['collectionContent'])),
     );
   }
 
   Map<String, dynamic> toMap() {
     return {
-      'fields': {
-        'richTextField': {
-          'en-US': document.toMap(),
-        },
-      },
+      'id': id,
+      'createdAt': createdAt.toIso8601String(),
+      'updatedAt': updatedAt.toIso8601String(),
+      'collectionTitle': collectionTitle,
+      'collectionContent': jsonEncode(collectionContent),
     };
   }
 }
 
+class Tile implements ContentModel {
+  final String id;
+  final DateTime createdAt;
+  final DateTime updatedAt;
+  final String tileHeadline;
+  final String tileSubBody;
 
-// You'll also need to define the RichText class and its methods if you haven't already.
+  Tile({
+    required this.id,
+    required this.createdAt,
+    required this.updatedAt,
+    required this.tileHeadline,
+    required this.tileSubBody,
+  });
+
+  static Tile fromContentful(Map<String, dynamic> entry) {
+    return Tile(
+      id: entry['sys']['id'],
+      createdAt: DateTime.parse(entry['sys']['createdAt']),
+      updatedAt: DateTime.parse(entry['sys']['updatedAt']),
+      tileHeadline: entry['fields']['tileHeadline']['en-US'],
+      tileSubBody: entry['fields']['tileSubBody']['en-US'],
+    );
+  }
+
+  static Tile fromMap(Map<String, dynamic> map) {
+    return Tile(
+      id: map['id'],
+      createdAt: DateTime.parse(map['createdAt']),
+      updatedAt: DateTime.parse(map['updatedAt']),
+      tileHeadline: map['tileTitle'],
+      tileSubBody: map['tileSubBody'],
+    );
+  }
+
+  Map<String, dynamic> toMap() {
+    return {
+      'id': id,
+      'createdAt': createdAt.toIso8601String(),
+      'updatedAt': updatedAt.toIso8601String(),
+      'tileHeadline': tileHeadline,
+      'tileSubBody': tileSubBody,
+    };
+  }
+}

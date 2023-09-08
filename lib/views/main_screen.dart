@@ -35,7 +35,7 @@ class _MainScreenState extends ConsumerState<MainScreen> {
       body: IndexedStack(
         index: _currentIndex,
         children: [
-          VideoPlayerScreen(isVideoTabActive: widget.isVideoTabActive),
+          //VideoPlayerScreen(isVideoTabActive: widget.isVideoTabActive),
           ProfileScreen(),
           SettingsScreen(),
         ],
@@ -49,7 +49,7 @@ class _MainScreenState extends ConsumerState<MainScreen> {
           });
         },
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home)),
+          //BottomNavigationBarItem(icon: Icon(Icons.home)),
           BottomNavigationBarItem(icon: Icon(Icons.person)),
           BottomNavigationBarItem(icon: Icon(Icons.settings)),
         ],

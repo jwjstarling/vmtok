@@ -2,9 +2,32 @@ import 'package:contentful_sync/contentful_sync.dart';
 
 final localStore = LocalStore();
 
+Future<Map<String, dynamic>> fetchPageData(String pageId) async {
+  // 1. Fetch the page content using the page ID.
+  Map<String, dynamic> pageContent = await fetchPageContent(pageId);
+
+  // 2. Extract the list of item IDs.
+  List<String> itemIds = await extractItemIdsFromPageContent(pageId);
+
+  // 3. Fetch content types for these item IDs and group them by content type.
+  Map<String, List<String>> groupedIdsByType =
+      await fetchContentTypesAndGroupIds(itemIds);
+
+  // 4. Query the appropriate tables for each content type and fetch the content items.
+  Map<String, List<Map<String, dynamic>>> contentData =
+      await fetchContentForGroupedIds(groupedIdsByType);
+
+  // Combine the page content and the fetched content items into a single map and return.
+  pageContent['contentItems'] = contentData;
+  return pageContent;
+}
+
 Future<Map<String, dynamic>> fetchPageContent(String pageId) async {
+  await localStore.open();
   // Use the queryByField function to fetch the content for the given pageId
-  List<Map<String, dynamic>> results = await localStore.queryByField('pageContent', 'pageId', pageId);
+  print("+++ Querying content of page ID $pageId +++");
+  List<Map<String, dynamic>> results =
+      await localStore.queryByField('pageContent', 'pageId', pageId);
 
   // Check if any results were returned
   if (results.isEmpty) {
@@ -26,19 +49,22 @@ Future<List<String>> extractItemIdsFromPageContent(String pageId) async {
   if (pageContent.containsKey('pageStructuredContentCollection')) {
     itemIds = List<String>.from(pageContent['pageStructuredContentCollection']);
   } else {
-    throw Exception('The pageStructuredContentCollection field is missing for page ID: $pageId');
+    throw Exception(
+        'The pageStructuredContentCollection field is missing for page ID: $pageId');
   }
 
   return itemIds;
 }
 
-Future<Map<String, List<String>>> fetchContentTypesAndGroupIds(List<String> itemIds) async {
+Future<Map<String, List<String>>> fetchContentTypesAndGroupIds(
+    List<String> itemIds) async {
   // Map to hold the grouped IDs by content type
   Map<String, List<String>> groupedIdsByType = {};
 
   // Fetch content type for each ID and group them
   for (String itemId in itemIds) {
-    List<Map<String, dynamic>> results = await localStore.queryByField('inventory', 'id', itemId);
+    List<Map<String, dynamic>> results =
+        await localStore.queryByField('inventory', 'id', itemId);
 
     if (results.isEmpty) {
       throw Exception('Content type not found for ID: $itemId');
@@ -58,7 +84,8 @@ Future<Map<String, List<String>>> fetchContentTypesAndGroupIds(List<String> item
   return groupedIdsByType;
 }
 
-Future<Map<String, List<Map<String, dynamic>>>> fetchContentForGroupedIds(Map<String, List<String>> groupedIdsByType) async {
+Future<Map<String, List<Map<String, dynamic>>>> fetchContentForGroupedIds(
+    Map<String, List<String>> groupedIdsByType) async {
   // Map to hold the content items grouped by content type
   Map<String, List<Map<String, dynamic>>> contentByType = {};
 
@@ -69,7 +96,8 @@ Future<Map<String, List<Map<String, dynamic>>>> fetchContentForGroupedIds(Map<St
     // Use an IN clause to fetch all rows with IDs in the list of idsForType
     String whereClause = 'id IN (${idsForType.map((_) => '?').join(', ')})';
 
-    List<Map<String, dynamic>> results = await localStore.queryWithWhereClause(contentType, whereClause, idsForType);
+    List<Map<String, dynamic>> results = await localStore.queryWithWhereClause(
+        contentType, whereClause, idsForType);
 
     if (results.isEmpty) {
       throw Exception('No content found for content type: $contentType');

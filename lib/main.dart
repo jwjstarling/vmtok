@@ -21,7 +21,19 @@ void main() async {
   syncManager.registerContentModel(
       'videoCollection', (data) => VideoCollection.fromContentful(data));
   syncManager.registerContentModel('Asset', Asset.fromContentful);
-  syncManager.registerContentModel('pageContent', (data) => PageContent.fromContentful(data));
+  syncManager.registerContentModel(
+      'pageContent', (data) => PageContent.fromContentful(data));
+  syncManager.registerContentModel(
+      'faqCollections', (data) => FAQCollections.fromContentful(data));
+  syncManager.registerContentModel(
+      'faqCollection', (data) => FAQCollection.fromContentful(data));
+  syncManager.registerContentModel(
+      'faqItem', (data) => FAQItem.fromContentful(data));
+  syncManager.registerContentModel(
+      'tileCollection', (data) => TileCollection.fromContentful(data));
+  syncManager.registerContentModel('tile', (data) => Tile.fromContentful(data));
+  syncManager.registerContentModel(
+      'callToAction', (data) => CallToAction.fromContentful(data));
 
   await syncManager.initialSync();
   await localStore.printAllTables();
