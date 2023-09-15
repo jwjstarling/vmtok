@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:contentful_sync/classes/content_model.dart';
+import 'package:contentful_sync/utils/logger.dart';
 import 'rich_content_classes.dart';
 
 class PageContentLabelCollection implements ContentModel {
@@ -49,24 +50,36 @@ class PageContentLabelCollection implements ContentModel {
   }
 }
 
-class ContentLabel {
+class ContentLabel implements ContentModel {
+  final String id;
+  final DateTime createdAt;
+  final DateTime updatedAt;
   final String labelText;
   final String labelId;
 
   ContentLabel({
+    required this.id,
+    required this.createdAt,
+    required this.updatedAt,
     required this.labelText,
     required this.labelId,
   });
 
   static ContentLabel fromContentful(Map<String, dynamic> entry) {
     return ContentLabel(
-      labelText: entry['fields']['label-text']['en-US'],
-      labelId: entry['fields']['label-id']['en-US'],
+      id: entry['sys']['id'],
+      createdAt: DateTime.parse(entry['sys']['createdAt']),
+      updatedAt: DateTime.parse(entry['sys']['updatedAt']),
+      labelText: entry['fields']['labelText']['en-US'],
+      labelId: entry['fields']['labelId']['en-US'],
     );
   }
 
   static ContentLabel fromMap(Map<String, dynamic> map) {
     return ContentLabel(
+      id: map['id'],
+      createdAt: DateTime.parse(map['createdAt']),
+      updatedAt: DateTime.parse(map['updatedAt']),
       labelText: map['labelText'],
       labelId: map['labelId'],
     );
@@ -74,6 +87,9 @@ class ContentLabel {
 
   Map<String, dynamic> toMap() {
     return {
+      'id': id,
+      'createdAt': createdAt.toIso8601String(),
+      'updatedAt': updatedAt.toIso8601String(),
       'labelText': labelText,
       'labelId': labelId,
     };
@@ -104,27 +120,37 @@ class PageContent implements ContentModel {
       createdAt: DateTime.parse(entry['sys']['createdAt']),
       updatedAt: DateTime.parse(entry['sys']['updatedAt']),
       pageId: entry['fields']['pageId']['en-US'],
-      pageContentLabels:
-          (entry['fields']['pageContentLabelCollection']['en-US'] as List)
-              .map((e) => e['sys']['id'] as String)
-              .toList(),
-      pageStructuredContentCollection:
-          (entry['fields']['pageStructuredContentCollection']['en-US'] as List)
-              .map((e) => e['sys']['id'] as String)
-              .toList(),
+      pageContentLabels: 
+        (entry['fields']['pageContentLabelCollection']?['en-US'] as List?)
+            ?.map((e) => e['sys']['id'] as String)
+            .toList() ?? 
+        [], // Provide a default empty list if the field is null
+      pageStructuredContentCollection: 
+        (entry['fields']['pageStructuredContentCollection']?['en-US'] as List?)
+            ?.map((e) => e['sys']['id'] as String)
+            .toList() ?? 
+        [], // Provide a default empty list if the field is null
     );
   }
 
   static PageContent fromMap(Map<String, dynamic> map) {
+
+    logger.i('pageContentLabelCollection: ${map['pageContentLabelCollection']}');
+    logger.i('pageStructuredContentCollection: ${map['pageStructuredContentCollection']}');
+
     return PageContent(
       id: map['id'],
       createdAt: DateTime.parse(map['createdAt']),
       updatedAt: DateTime.parse(map['updatedAt']),
       pageId: map['pageId'],
-      pageContentLabels:
-          List<String>.from(jsonDecode(map['pageContentLabelCollection'])),
-      pageStructuredContentCollection:
-          List<String>.from(jsonDecode(map['pageStructuredContentCollection'])),
+      pageContentLabels: 
+        (jsonDecode(map['pageContentLabelCollection'] ?? '[]') as List)
+            .map((e) => e as String)
+            .toList(), // Provide a default empty JSON array string if the field is null
+    pageStructuredContentCollection: 
+        (jsonDecode(map['pageStructuredContentCollection'] ?? '[]') as List)
+            .map((e) => e as String)
+            .toList(), // Provide a default empty JSON array string if the field is null
     );
   }
 
@@ -402,14 +428,14 @@ class FAQCollection implements ContentModel {
   final DateTime createdAt;
   final DateTime updatedAt;
   final String faqCollectionTitle;
-  final List<FAQItem> faqs;
+  final List<String> faqIds; // List of FAQItem IDs
 
   FAQCollection({
     required this.id,
     required this.createdAt,
     required this.updatedAt,
     required this.faqCollectionTitle,
-    required this.faqs,
+    required this.faqIds,
   });
 
   static FAQCollection fromContentful(Map<String, dynamic> entry) {
@@ -418,8 +444,8 @@ class FAQCollection implements ContentModel {
       createdAt: DateTime.parse(entry['sys']['createdAt']),
       updatedAt: DateTime.parse(entry['sys']['updatedAt']),
       faqCollectionTitle: entry['fields']['faqCollectionTitle']['en-US'],
-      faqs: (entry['fields']['faqs']['en-US'] as List)
-          .map((faq) => FAQItem.fromContentful(faq))
+      faqIds: (entry['fields']['faqs']['en-US'] as List)
+          .map((e) => e['sys']['id'] as String)
           .toList(),
     );
   }
@@ -430,7 +456,7 @@ class FAQCollection implements ContentModel {
       createdAt: DateTime.parse(map['createdAt']),
       updatedAt: DateTime.parse(map['updatedAt']),
       faqCollectionTitle: map['faqCollectionTitle'],
-      faqs: (map['faqs'] as List).map((faq) => FAQItem.fromMap(faq)).toList(),
+      faqIds: List<String>.from(jsonDecode(map['faqIds'])),
     );
   }
 
@@ -440,7 +466,7 @@ class FAQCollection implements ContentModel {
       'createdAt': createdAt.toIso8601String(),
       'updatedAt': updatedAt.toIso8601String(),
       'faqCollectionTitle': faqCollectionTitle,
-      'faqs': faqs.map((faq) => faq.toMap()).toList(),
+      'faqIds': jsonEncode(faqIds),
     };
   }
 }
@@ -475,7 +501,7 @@ class FAQItem implements ContentModel {
       id: map['id'],
       createdAt: DateTime.parse(map['createdAt']),
       updatedAt: DateTime.parse(map['updatedAt']),
-      faqTitle: map['faqTitle']['en-US'],
+      faqTitle: map['faqTitle'],
       faqBody: RichText.fromMap(jsonDecode(map['faqBody'])),
     );
   }
@@ -570,7 +596,7 @@ class Tile implements ContentModel {
       id: map['id'],
       createdAt: DateTime.parse(map['createdAt']),
       updatedAt: DateTime.parse(map['updatedAt']),
-      tileHeadline: map['tileTitle'],
+      tileHeadline: map['tileHeadline'],
       tileSubBody: map['tileSubBody'],
     );
   }

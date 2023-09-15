@@ -34,60 +34,13 @@ void main() async {
   syncManager.registerContentModel('tile', (data) => Tile.fromContentful(data));
   syncManager.registerContentModel(
       'callToAction', (data) => CallToAction.fromContentful(data));
+  syncManager.registerContentModel(
+      'contentLabel', (data) => ContentLabel.fromContentful(data));
 
   await syncManager.initialSync();
   await localStore.printAllTables();
-  //await displayVideoDetails("Collection of Vids for VM Tok App");
 
   runApp(ProviderScope(child: MyApp()));
-}
-
-Future<VideoCollection?> fetchVideoCollectionByTitle(String title) async {
-  final results = await localStore.queryByField(
-      'VideoCollection', 'videoCollectionTitle', title);
-  if (results.isNotEmpty) {
-    print('Results from fetchVideoCollectionByTitle: $results');
-    return VideoCollection.fromMap(results.first);
-  }
-  return null;
-}
-
-Future<void> displayVideoDetails(String collectionTitle) async {
-  final collection = await fetchVideoCollectionByTitle(collectionTitle);
-  if (collection != null) {
-    final videoPosts = await fetchVideoPostsForCollection(collection);
-    for (var post in videoPosts) {
-      // Fetch the Asset for the VideoPost
-      Asset? videoAsset = await fetchAssetById(post.videoFileId);
-
-      print('Video Description: ${post.videoDescription}');
-      print('Video URL: ${videoAsset?.url}');
-    }
-  }
-}
-
-Future<List<VideoPost>> fetchVideoPostsForCollection(
-    VideoCollection collection) async {
-  final List<VideoPost> videoPosts = [];
-  for (var postId in collection.videoCollectionList) {
-    final results = await localStore.fetch('VideoPost');
-    results.forEach((map) {
-      if (map['id'] == postId) {
-        videoPosts.add(VideoPost.fromMap(map));
-      }
-    });
-  }
-  print('Results from fetchVideoPostsForCollection: $videoPosts');
-  return videoPosts;
-}
-
-Future<Asset?> fetchAssetById(String assetId) async {
-  final results = await localStore.queryByField('Asset', 'id', assetId);
-  if (results.isNotEmpty) {
-    print('Results from fetchAssetById: $results');
-    return Asset.fromMap(results.first);
-  }
-  return null;
 }
 
 class MyApp extends StatelessWidget {

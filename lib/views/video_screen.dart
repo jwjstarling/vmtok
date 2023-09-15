@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../main.dart';
 import '../provider/provider.dart';
 import '../classes/content_classes.dart';
 import 'package:contentful_sync/contentful_sync.dart';
@@ -63,6 +62,7 @@ class _VideoPlayerScreenState extends ConsumerState<VideoPlayerScreen> {
 
   Future<List<VideoPlayerController>> _initializeVideos() async {
     await localStore.open();
+    print("_initialize videos");
     final collection = await fetchVideoCollectionByTitle('Collection of Vids for VM Tok App');
     List<VideoPlayerController> controllers = [];
     if (collection != null) {

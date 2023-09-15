@@ -1,0 +1,5453 @@
+{
+	"sys": {
+		"type": "Array"
+	},
+	"items": [{
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "4XirVxKWq7DPJDL2cY8H5g",
+			"type": "Entry",
+			"createdAt": "2023-09-03T21:57:38.857Z",
+			"updatedAt": "2023-09-03T21:57:38.857Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 1,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "richTextTest"
+				}
+			}
+		},
+		"fields": {
+			"richTextField": {
+				"en-US": {
+					"nodeType": "document",
+					"data": {},
+					"content": [{
+						"nodeType": "heading-1",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "heading-2",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "heading-3",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": " laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate ",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "heading-4",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, ",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "heading-5",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "sunt in culpa qui officia deserunt mollit anim id est laborum.",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "heading-6",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "ut labore et dolore magna aliqua. ",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": "Ut enim ad minim ",
+							"marks": [],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": "veniam",
+							"marks": [{
+								"type": "italic"
+							}],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": ", quis nostrud ",
+							"marks": [],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": "exercitation",
+							"marks": [{
+								"type": "underline"
+							}],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": " ",
+							"marks": [],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": "ullamco",
+							"marks": [{
+								"type": "superscript"
+							}],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": " laboris nisi ut aliquip ex ea commodo consequat. ",
+							"marks": [],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": "Duis aute irure dolor in",
+							"marks": [{
+								"type": "subscript"
+							}],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": " reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat ",
+							"marks": [],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": "cupidatat non proident,",
+							"marks": [{
+								"type": "code"
+							}],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": " sunt in culpa qui ",
+							"marks": [],
+							"data": {}
+						}, {
+							"nodeType": "hyperlink",
+							"data": {
+								"uri": "https://google.com"
+							},
+							"content": [{
+								"nodeType": "text",
+								"value": "officia",
+								"marks": [],
+								"data": {}
+							}]
+						}, {
+							"nodeType": "text",
+							"value": " deserunt mollit anim id est laborum.",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "unordered-list",
+						"data": {},
+						"content": [{
+							"nodeType": "list-item",
+							"data": {},
+							"content": [{
+								"nodeType": "paragraph",
+								"data": {},
+								"content": [{
+									"nodeType": "text",
+									"value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ",
+									"marks": [],
+									"data": {}
+								}]
+							}]
+						}, {
+							"nodeType": "list-item",
+							"data": {},
+							"content": [{
+								"nodeType": "paragraph",
+								"data": {},
+								"content": [{
+									"nodeType": "text",
+									"value": "ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ",
+									"marks": [],
+									"data": {}
+								}]
+							}]
+						}]
+					}, {
+						"nodeType": "ordered-list",
+						"data": {},
+						"content": [{
+							"nodeType": "list-item",
+							"data": {},
+							"content": [{
+								"nodeType": "paragraph",
+								"data": {},
+								"content": [{
+									"nodeType": "text",
+									"value": "ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in ",
+									"marks": [],
+									"data": {}
+								}]
+							}]
+						}, {
+							"nodeType": "list-item",
+							"data": {},
+							"content": [{
+								"nodeType": "paragraph",
+								"data": {},
+								"content": [{
+									"nodeType": "text",
+									"value": "reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint ",
+									"marks": [],
+									"data": {}
+								}]
+							}]
+						}]
+					}, {
+						"nodeType": "blockquote",
+						"data": {},
+						"content": [{
+							"nodeType": "paragraph",
+							"data": {},
+							"content": [{
+								"nodeType": "text",
+								"value": "occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+								"marks": [],
+								"data": {}
+							}]
+						}, {
+							"nodeType": "paragraph",
+							"data": {},
+							"content": [{
+								"nodeType": "text",
+								"value": "",
+								"marks": [],
+								"data": {}
+							}]
+						}]
+					}, {
+						"nodeType": "hr",
+						"data": {},
+						"content": []
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+							"marks": [],
+							"data": {}
+						}]
+					}]
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "1LjgkLgu70vCh7hxixt8Gb",
+			"type": "Entry",
+			"createdAt": "2023-06-19T14:20:35.088Z",
+			"updatedAt": "2023-09-01T17:00:59.485Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 7,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "tile"
+				}
+			}
+		},
+		"fields": {
+			"tileTitle": {
+				"en-US": " Tile - Exclusves - Virgin Money Cashback"
+			},
+			"tileRef": {
+				"en-US": "tile.exclusives.cashback"
+			},
+			"tileImage": {
+				"en-US": {
+					"sys": {
+						"type": "Link",
+						"linkType": "Asset",
+						"id": "1FTHjMWyrpVql0DOBp6MEd"
+					}
+				}
+			},
+			"tileHeadline": {
+				"en-US": "Virgin Money Cashback",
+				"es-ES": "Virgin Money Cashback"
+			},
+			"tileSubBody": {
+				"en-US": "Earn cashback when you spend with selected top brands",
+				"es-ES": "Obtenga reembolsos cuando gaste con las mejores marcas seleccionadas"
+			},
+			"tileBody": {
+				"en-US": {
+					"data": {},
+					"content": [{
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "It's simple to earn cashback from your spending.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "Transfer cashback to your current account, or pay it onto your Virgin Money credit card\nItâ€™ll arrive in your account within three to five working days",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "Trade up for e-Gift cards\nExchange your cashback for e-Gift cards to use at selected retailers either in store or online.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}],
+					"nodeType": "document"
+				},
+				"es-ES": {
+					"data": {},
+					"content": [{
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "Muchos...",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}],
+					"nodeType": "document"
+				}
+			},
+			"tileCta": {
+				"en-US": {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "1T4v92VrrY2Pi2fu28qEVm"
+					}
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "2jYDCTdQPQVU3vAUAtEEgP",
+			"type": "Entry",
+			"createdAt": "2023-03-10T14:56:55.437Z",
+			"updatedAt": "2023-09-01T16:31:13.008Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 22,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "tile"
+				}
+			}
+		},
+		"fields": {
+			"tileTitle": {
+				"en-US": "Tile - Promo Offer of the Day"
+			},
+			"tileRef": {
+				"en-US": "home.tile.offers.promo"
+			},
+			"tileImage": {
+				"en-US": {
+					"sys": {
+						"type": "Link",
+						"linkType": "Asset",
+						"id": "3XnUwmoDexMnfegBCSr46W"
+					}
+				}
+			},
+			"tileHeadline": {
+				"en-US": "Virgin Money current accounts",
+				"es-ES": "Ofertas Ãºnicas solo para ti"
+			},
+			"tileSubBody": {
+				"en-US": "Say yes to the best current account provider 2022",
+				"es-ES": "...a un clic de distancia"
+			},
+			"tileBody": {
+				"en-US": {
+					"nodeType": "document",
+					"data": {},
+					"content": [{
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "You can manage your account online or in the app. Itâ€™s packed withÂ ",
+							"marks": [],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": "super-smart features",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": "Â to put you in control of your cash.",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "It's easy to get started",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Once you've opened your account, register for cashback in the app.",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Watch your money grow",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Check the latest and greatest cashback offers in the app. Spend with these retailers on your debit card and you'll earn cashback on these offers automatically.",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Bank your cashback",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "When you want your cash back, transfer it into your current account.",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "",
+							"marks": [],
+							"data": {}
+						}]
+					}]
+				},
+				"es-ES": {
+					"data": {},
+					"content": [{
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "Puedes obtener un trato ",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "exclusivo",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [],
+							"value": ".",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "Consiga sus vacaciones ",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [{
+								"type": "italic"
+							}],
+							"value": "perfectas",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [],
+							"value": " abajo.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}],
+					"nodeType": "document"
+				}
+			},
+			"tileCta": {
+				"en-US": {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "4IA0LO4CQYuvGSlVKZ1It"
+					}
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "4IA0LO4CQYuvGSlVKZ1It",
+			"type": "Entry",
+			"createdAt": "2023-06-21T09:47:06.374Z",
+			"updatedAt": "2023-09-01T16:23:11.667Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 2,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "callToAction"
+				}
+			}
+		},
+		"fields": {
+			"callToActionTitle": {
+				"en-US": "CTA - product range"
+			},
+			"callToActionText": {
+				"en-US": "More",
+				"es-ES": "Saber mas"
+			},
+			"callToActionId": {
+				"en-US": "tile.products.latest"
+			},
+			"callToActionStyle": {
+				"en-US": ["icon"]
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "3l1mYAM9Pxus1DFdv5HSOH",
+			"type": "Entry",
+			"createdAt": "2023-06-18T10:50:18.183Z",
+			"updatedAt": "2023-09-01T16:17:15.633Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 2,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "tileCollection"
+				}
+			}
+		},
+		"fields": {
+			"collectionTitle": {
+				"en-US": "Product Tile Carousel"
+			},
+			"collectionHeader": {
+				"en-US": "Your product offers",
+				"es-ES": "Tus ofertas de productos"
+			},
+			"collectionId": {
+				"en-US": "product-tile-carousel"
+			},
+			"collectionContent": {
+				"en-US": [{
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "2jYDCTdQPQVU3vAUAtEEgP"
+					}
+				}]
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "1iZW8gRh3ZyzsGQotMt6SR",
+			"type": "Entry",
+			"createdAt": "2023-06-15T09:07:45.835Z",
+			"updatedAt": "2023-09-01T11:17:51.147Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 6,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "tileCollection"
+				}
+			}
+		},
+		"fields": {
+			"collectionTitle": {
+				"en-US": "Exclusive Tile Carousel"
+			},
+			"collectionHeader": {
+				"en-US": "Your Exclusive offers",
+				"es-ES": "Tus ofertas exclusivas"
+			},
+			"collectionId": {
+				"en-US": "exclusive-tile-carousel"
+			},
+			"collectionContent": {
+				"en-US": [{
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "4UIyiTvmavZtJ77QuQw2UJ"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "0Cul2Umc8QtB0BIKgYtFO"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "1LjgkLgu70vCh7hxixt8Gb"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "7Hs8B1H9DV9siVyd4ldRIp"
+					}
+				}]
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "1T4v92VrrY2Pi2fu28qEVm",
+			"type": "Entry",
+			"createdAt": "2023-06-19T14:13:55.943Z",
+			"updatedAt": "2023-09-01T11:17:00.265Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 6,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "callToAction"
+				}
+			}
+		},
+		"fields": {
+			"callToActionTitle": {
+				"en-US": "CTA - Bank your cashback"
+			},
+			"callToActionText": {
+				"en-US": "Bank your cashback",
+				"es-ES": "Deposite su reembolso"
+			},
+			"callToActionId": {
+				"en-US": "tile.exclusives.cashback.cta"
+			},
+			"callToActionStyle": {
+				"en-US": ["Text", "Red", "icon"]
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "Splj6hSxjwWsfe64EBWUY",
+			"type": "Entry",
+			"createdAt": "2023-08-31T22:19:12.362Z",
+			"updatedAt": "2023-08-31T22:19:12.362Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 1,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "pageContent"
+				}
+			}
+		},
+		"fields": {
+			"pageTitle": {
+				"en-US": "Profile Page"
+			},
+			"pageId": {
+				"en-US": "app.profile.intro"
+			},
+			"pageContentLabelCollection": {
+				"en-US": [{
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "46BTwhL5emzTaicjMgD8IW"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "1Ib5CXKRQyCEaUc9C6EClP"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "41RvSMoqdO9EhN77JKNqUD"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "4FlgOjMIqKCf20dTcb2pTT"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "1Tnf9JHpy9tnKo6fhjR4zJ"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "4kHW52986WPdmUnp1cU0ts"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "1dhjVxe4bJJTBbtqnKv1rC"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "7aqM5Uwprm6bhUWuuWSEQa"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "6Fvu699eaECsFshzO5XYuv"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "2iVTXmScLKaEn7lTt73ybF"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "1P0TWYzyGMHlsRQCxRF8no"
+					}
+				}]
+			},
+			"pageStructuredContentCollection": {
+				"en-US": [{
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "1iZW8gRh3ZyzsGQotMt6SR"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "3l1mYAM9Pxus1DFdv5HSOH"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "7N2S7gKxb8v9jmtL10oNkO"
+					}
+				}]
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "5384syr9D8EHtahmS2ZRFb",
+			"type": "Entry",
+			"createdAt": "2023-08-04T08:58:13.464Z",
+			"updatedAt": "2023-08-24T14:49:27.553Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 7,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "videoPost"
+				}
+			}
+		},
+		"fields": {
+			"videoTitle": {
+				"en-US": "Video 4"
+			},
+			"videoFile": {
+				"en-US": {
+					"sys": {
+						"type": "Link",
+						"linkType": "Asset",
+						"id": "4EdMKVfgu2L2VCW9l7P1Sg"
+					}
+				}
+			},
+			"videoDescription": {
+				"en-US": "Here's a demo of something - with some added stuff",
+				"es-ES": "AquÃ­ hay una demostraciÃ³n de algo."
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "22isATpqMsXDFDskWAmWH0",
+			"type": "Entry",
+			"createdAt": "2023-08-03T12:24:44.852Z",
+			"updatedAt": "2023-08-05T13:30:32.477Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 3,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "videoCollection"
+				}
+			}
+		},
+		"fields": {
+			"videoCollectionTitle": {
+				"en-US": "Collection of Vids for VM Tok App"
+			},
+			"videoCollectionList": {
+				"en-US": [{
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "ueG8GXN6jfuJmtN8qGSee"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "1T08rIX9Uo56VYiocSPyoF"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "26WNxz8BdO1P5G9l1THm4U"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "5384syr9D8EHtahmS2ZRFb"
+					}
+				}]
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "26WNxz8BdO1P5G9l1THm4U",
+			"type": "Entry",
+			"createdAt": "2023-08-03T12:21:23.680Z",
+			"updatedAt": "2023-08-05T13:30:22.799Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 3,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "videoPost"
+				}
+			}
+		},
+		"fields": {
+			"videoTitle": {
+				"en-US": "Video 2"
+			},
+			"videoFile": {
+				"en-US": {
+					"sys": {
+						"type": "Link",
+						"linkType": "Asset",
+						"id": "7r7sEJnMbwfbMXTTdyMmcv"
+					}
+				}
+			},
+			"videoDescription": {
+				"en-US": "Contentful Demo - its great",
+				"es-ES": "DemostraciÃ³n con Contentful: es genial"
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "ueG8GXN6jfuJmtN8qGSee",
+			"type": "Entry",
+			"createdAt": "2023-08-03T12:22:15.577Z",
+			"updatedAt": "2023-08-05T13:30:22.766Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 2,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "videoPost"
+				}
+			}
+		},
+		"fields": {
+			"videoTitle": {
+				"en-US": "Video 3"
+			},
+			"videoFile": {
+				"en-US": {
+					"sys": {
+						"type": "Link",
+						"linkType": "Asset",
+						"id": "4YSOSCgsnYpPiZgtNOnVgH"
+					}
+				}
+			},
+			"videoDescription": {
+				"en-US": "Office 360",
+				"es-ES": "Oficina 360"
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "1T08rIX9Uo56VYiocSPyoF",
+			"type": "Entry",
+			"createdAt": "2023-08-03T12:19:32.388Z",
+			"updatedAt": "2023-08-05T13:30:22.715Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 2,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "videoPost"
+				}
+			}
+		},
+		"fields": {
+			"videoTitle": {
+				"en-US": "Video 1"
+			},
+			"videoFile": {
+				"en-US": {
+					"sys": {
+						"type": "Link",
+						"linkType": "Asset",
+						"id": "1raC1nbdtYwWlx1hFOSvX4"
+					}
+				}
+			},
+			"videoDescription": {
+				"en-US": "Here's a look at my office at home",
+				"es-ES": "AquÃ­ hay un vistazo a mi oficina en casa."
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "8CVtzd9vXvhofOrzGVJFv",
+			"type": "Asset",
+			"createdAt": "2023-08-03T12:19:50.752Z",
+			"updatedAt": "2023-08-05T13:30:12.822Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 2
+		},
+		"fields": {
+			"title": {
+				"en-US": "Vid2"
+			},
+			"file": {
+				"en-US": {
+					"url": "//videos.ctfassets.net/5n0lh0o2t6d6/8CVtzd9vXvhofOrzGVJFv/eddaffd5b078476490088b4d628ca3b9/Vid2.mp4",
+					"details": {
+						"size": 26000008
+					},
+					"fileName": "Vid2.mp4",
+					"contentType": "video/mp4"
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "4YSOSCgsnYpPiZgtNOnVgH",
+			"type": "Asset",
+			"createdAt": "2023-08-03T12:19:50.751Z",
+			"updatedAt": "2023-08-05T13:30:12.819Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 2
+		},
+		"fields": {
+			"title": {
+				"en-US": "Convert"
+			},
+			"file": {
+				"en-US": {
+					"url": "//videos.ctfassets.net/5n0lh0o2t6d6/4YSOSCgsnYpPiZgtNOnVgH/050194d066356e19867e8657d0eea302/Convert.mp4",
+					"details": {
+						"size": 18521658
+					},
+					"fileName": "Convert.mp4",
+					"contentType": "video/mp4"
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "7r7sEJnMbwfbMXTTdyMmcv",
+			"type": "Asset",
+			"createdAt": "2023-08-03T12:19:50.749Z",
+			"updatedAt": "2023-08-05T13:30:12.816Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 2
+		},
+		"fields": {
+			"title": {
+				"en-US": "Contentful Demo -p1"
+			},
+			"file": {
+				"en-US": {
+					"url": "//videos.ctfassets.net/5n0lh0o2t6d6/7r7sEJnMbwfbMXTTdyMmcv/1e12744faa1a91afcbcb42673285bb6c/Contentful_Demo_-p1.mp4",
+					"details": {
+						"size": 49643480
+					},
+					"fileName": "Contentful Demo -p1.mp4",
+					"contentType": "video/mp4"
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "4EdMKVfgu2L2VCW9l7P1Sg",
+			"type": "Asset",
+			"createdAt": "2023-08-03T12:19:50.746Z",
+			"updatedAt": "2023-08-05T13:30:12.808Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 2
+		},
+		"fields": {
+			"title": {
+				"en-US": "demo"
+			},
+			"file": {
+				"en-US": {
+					"url": "//videos.ctfassets.net/5n0lh0o2t6d6/4EdMKVfgu2L2VCW9l7P1Sg/f0bba4c323b07e3d593986cfbbf9abc0/demo.mp4",
+					"details": {
+						"size": 10100022
+					},
+					"fileName": "demo.mp4",
+					"contentType": "video/mp4"
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "1raC1nbdtYwWlx1hFOSvX4",
+			"type": "Asset",
+			"createdAt": "2023-08-03T12:19:50.743Z",
+			"updatedAt": "2023-08-05T13:30:12.805Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 2
+		},
+		"fields": {
+			"title": {
+				"en-US": "Vid1"
+			},
+			"file": {
+				"en-US": {
+					"url": "//videos.ctfassets.net/5n0lh0o2t6d6/1raC1nbdtYwWlx1hFOSvX4/3f2b19c4c0fa7b416562defce0396fea/Vid1.mp4",
+					"details": {
+						"size": 36395125
+					},
+					"fileName": "Vid1.mp4",
+					"contentType": "video/mp4"
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "7uWQzvGegPk5TyDBe19D8R",
+			"type": "Entry",
+			"createdAt": "2023-06-28T12:47:59.286Z",
+			"updatedAt": "2023-08-03T12:41:29.025Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 8,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "faqItem"
+				}
+			}
+		},
+		"fields": {
+			"faqTitle": {
+				"en-US": "Is it nearly the Friday yet? Please....",
+				"es-ES": "Es esto una prueba"
+			},
+			"faqBody": {
+				"en-US": {
+					"data": {},
+					"content": [{
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "Not quite there yet...",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}],
+					"nodeType": "document"
+				},
+				"es-ES": {
+					"data": {},
+					"content": [{
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "SÃ­, lo es",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}],
+					"nodeType": "document"
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "3OvMKHO4vusFIKr4EEav3l",
+			"type": "Entry",
+			"createdAt": "2023-06-07T12:09:09.530Z",
+			"updatedAt": "2023-07-31T15:35:12.895Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 4,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "faqItem"
+				}
+			}
+		},
+		"fields": {
+			"faqTitle": {
+				"en-US": "What happens if I'm declined?",
+				"es-ES": "Que pasa si estoy rechazado?"
+			},
+			"faqBody": {
+				"en-US": {
+					"nodeType": "document",
+					"data": {},
+					"content": [{
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "If we declined to offer you a card, we won't be able to tell you exactly why. When you apply for credit, we (and other lenders you apply to) will look at a range of factors.Â ",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "This includes the information you told us in your application, your income or outgoings, your credit history and that you meet our lending criteria. Â If we've said no this time, it doesn't mean everyone else will too but please wait at least 6 months before applying for a Virgin Money Credit Card again.",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Each time you apply for credit, it may affect your credit score. So, if you're thinking of applying for more, it's a good idea to get a copy of your credit report and check that it is all up to date. Â ",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "If you think our decision isn't right and you've got more info to share, we'll take another look and get back to you within a month. We will need to know why you wish to appeal the decision and what additional information you can provide that would support the appeal.",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "You canÂ write to us at:\n",
+							"marks": [],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": "Virgin Money Credit Cards",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": "\nPO Box 10234\nWigston\nLE18 9FA",
+							"marks": [],
+							"data": {}
+						}]
+					}]
+				},
+				"es-ES": {
+					"data": {},
+					"content": [{
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "Si nos negamos a ofrecerle una tarjeta, no podremos decirle exactamente por que. Cuando solicite un credito, nosotros (y otros prestamistas a los que usted solicite) consideraremos una variedad de factores.",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [],
+							"value": "\n\nEsto incluye la informacion que nos proporcionÃ³ en su solicitud, sus ingresos o gastos, su historial crediticio y que cumple con nuestros criterios de prestamo. Si hemos dicho que no esta vez, no significa que todos los demas tambien lo haran, pero espere al menos 6 meses antes de volver a solicitar una tarjeta de credito Virgin Money.\n\nCada vez que solicita un crÃ©dito, puede afectar su puntaje crediticio. Entonces, si esta pensando en solicitar mas, es una buena idea obtener una copia de su informe de crÃ©dito y verificar que estÃ© actualizado.\n\nSi cree que nuestra decision no es correcta y tiene mas informacion para compartir, volveremos a analizarla y le responderemos dentro de un mes. Necesitaremos saber por que desea apelar la decisiÃ³n y que informaciÃ³n adicional puede proporcionar para respaldar la apelacion.\n\nPuedes escribirnos a:\nTarjetas de credito Virgin Money\napartado de correos 10234\nWigston\nLE18 9FA",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}],
+					"nodeType": "document"
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "6yFgRks5ncULQLBr4lyg5B",
+			"type": "Entry",
+			"createdAt": "2023-06-07T10:44:47.335Z",
+			"updatedAt": "2023-07-26T12:33:56.139Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 7,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "faqCollection"
+				}
+			}
+		},
+		"fields": {
+			"faqCollectionTitle": {
+				"en-US": "Getting Started",
+				"es-ES": "Empezando"
+			},
+			"faqs": {
+				"en-US": [{
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "7uWQzvGegPk5TyDBe19D8R"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "12wbeXYGJ1AXy3Fl4jxr8P"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "7bF1OLeKTgrhfkpvonhviJ"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "3vUsjOmXQVr46NJOGVQG62"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "4Szjh2hF6wmi9beywIMeXs"
+					}
+				}]
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "46BTwhL5emzTaicjMgD8IW",
+			"type": "Entry",
+			"createdAt": "2023-06-26T14:07:17.575Z",
+			"updatedAt": "2023-06-29T07:49:48.230Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 5,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "contentLabel"
+				}
+			}
+		},
+		"fields": {
+			"labelTitle": {
+				"en-US": "Apply Form - Step 1 - Name Error label"
+			},
+			"labelText": {
+				"en-US": "You must add a valid name",
+				"es-ES": "Formato de nombre no vÃ¡lido"
+			},
+			"labelId": {
+				"en-US": "page.apply.step1.name.label.error"
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "1Ib5CXKRQyCEaUc9C6EClP",
+			"type": "Entry",
+			"createdAt": "2023-06-26T14:05:51.851Z",
+			"updatedAt": "2023-06-29T07:49:35.032Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 4,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "contentLabel"
+				}
+			}
+		},
+		"fields": {
+			"labelTitle": {
+				"en-US": "Apply Form - Step 1 - Name label"
+			},
+			"labelText": {
+				"en-US": "Name",
+				"es-ES": "Nombre"
+			},
+			"labelId": {
+				"en-US": "page.apply.step1.name.label"
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "41RvSMoqdO9EhN77JKNqUD",
+			"type": "Entry",
+			"createdAt": "2023-06-27T16:16:02.228Z",
+			"updatedAt": "2023-06-29T07:49:19.388Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 4,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "contentLabel"
+				}
+			}
+		},
+		"fields": {
+			"labelTitle": {
+				"en-US": "Apply Form - Step 1 - Title label"
+			},
+			"labelText": {
+				"en-US": "Step 1 - More info about you",
+				"es-ES": "Paso 1 - Acerca de ti"
+			},
+			"labelId": {
+				"en-US": "page.apply.step1.title.label"
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "4UIyiTvmavZtJ77QuQw2UJ",
+			"type": "Entry",
+			"createdAt": "2023-06-19T14:30:45.939Z",
+			"updatedAt": "2023-06-29T07:45:50.674Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 6,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "tile"
+				}
+			}
+		},
+		"fields": {
+			"tileTitle": {
+				"en-US": "Tile - Exclusives - Youtility"
+			},
+			"tileRef": {
+				"en-US": "tile.exclusives.youtility"
+			},
+			"tileImage": {
+				"en-US": {
+					"sys": {
+						"type": "Link",
+						"linkType": "Asset",
+						"id": "3cVQjYB0VhQWGnB0PsPP3b"
+					}
+				}
+			},
+			"tileHeadline": {
+				"en-US": "Youtility, sorted!",
+				"es-ES": "Youtility, ordenado!"
+			},
+			"tileSubBody": {
+				"en-US": "Give your household bills a money makeover with Youtility today.",
+				"es-ES": "Dale un cambio de imagen a las facturas de tu hogar con Youtility."
+			},
+			"tileBody": {
+				"en-US": {
+					"data": {},
+					"content": [{
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "Budget boosting deals on your mobile, broadband and TV\n",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "We're committed to helping you feel happier about money and making your money work harder for you. Replacing household bills is top of mind for many of us right now/\n",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "Introducing Youtility.\n",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "Compare your existing mobile, broadband and TV deals with Youtility. You could save over Â£250 a year by switching providers. They'll do all the hard work, giving you honest, independent and impartial deals.\n",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "We won't give them any of your personal details. If you've got any questions along the way, they'll be happy to help. For every switch you make with Youtility we'll get a payment from them",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}],
+					"nodeType": "document"
+				},
+				"es-ES": {
+					"data": {},
+					"content": [{
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "Ofertas que aumentan el presupuesto en tu mÃ³vil, banda ancha y TV.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "\nEstamos comprometidos a ayudarlo a sentirse mÃ¡s feliz con el dinero y hacer que su dinero trabaje mÃ¡s para usted. Reemplazar las facturas del hogar es lo mÃ¡s importante para muchos de nosotros en este momento.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "\n",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "Presentamos Youtility.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "\nCompare sus ofertas existentes de telefonÃ­a mÃ³vil, banda ancha y TV con Youtility. PodrÃ­a ahorrar mÃ¡s de Â£ 250 al aÃ±o cambiando de proveedor. Ellos harÃ¡n todo el trabajo duro, ofreciÃ©ndole tratos honestos, independientes e imparciales.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "\nNo les daremos ninguno de sus datos personales. Si tiene alguna pregunta en el camino, estarÃ¡n encantados de ayudarle. Por cada cambio que realice con Youtility, recibiremos un pago de ellos",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}],
+					"nodeType": "document"
+				}
+			},
+			"tileCta": {
+				"en-US": {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "61vcXXSrJ7hNPYkA8vMnA1"
+					}
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "3FeqbF2DaJ7dSdOzx2Jwbu",
+			"type": "Entry",
+			"createdAt": "2023-06-07T11:57:44.042Z",
+			"updatedAt": "2023-06-29T07:34:24.879Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 10,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "faqCollections"
+				}
+			}
+		},
+		"fields": {
+			"collectionsTitle": {
+				"en-US": "Applying for a Credit Card",
+				"es-ES": "Solicitud de una tarjeta de crÃ©dito"
+			},
+			"collectionsId": {
+				"en-US": "collections.faqs.creditcard.applying"
+			},
+			"faqCollections": {
+				"en-US": [{
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "6yFgRks5ncULQLBr4lyg5B"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "6q2ewCgUjRwCMBvV7JrmGe"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "38GT8QttYlY8H68mvjkWQN"
+					}
+				}]
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "4FlgOjMIqKCf20dTcb2pTT",
+			"type": "Entry",
+			"createdAt": "2023-06-26T14:20:42.097Z",
+			"updatedAt": "2023-06-28T12:59:15.999Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 3,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "contentLabel"
+				}
+			}
+		},
+		"fields": {
+			"labelTitle": {
+				"en-US": "Apply Form - Step 1 - Next CTA label"
+			},
+			"labelText": {
+				"en-US": "Next",
+				"es-ES": "Siguiente"
+			},
+			"labelId": {
+				"en-US": "page.apply.step1.next.cta.label"
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "1Tnf9JHpy9tnKo6fhjR4zJ",
+			"type": "Entry",
+			"createdAt": "2023-06-26T14:08:24.130Z",
+			"updatedAt": "2023-06-28T07:24:14.894Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 4,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "contentLabel"
+				}
+			}
+		},
+		"fields": {
+			"labelTitle": {
+				"en-US": "Apply Form - Step 1 - DOB label"
+			},
+			"labelText": {
+				"en-US": "Date of birth",
+				"es-ES": "Fecha de nacimiento"
+			},
+			"labelId": {
+				"en-US": "page.apply.step1.dob.label"
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "3bpF7KDiScbUAxZLoP3bGo",
+			"type": "Entry",
+			"createdAt": "2023-06-26T14:30:47.311Z",
+			"updatedAt": "2023-06-27T16:16:15.951Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 3,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "contentLabelCollection"
+				}
+			}
+		},
+		"fields": {
+			"labelCollectionTitle": {
+				"en-US": "Page - Apply - Step 1 - Label Collection"
+			},
+			"labelCollectionId": {
+				"en-US": "page.apply.step1.headers"
+			},
+			"contentLabels": {
+				"en-US": [{
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "4FlgOjMIqKCf20dTcb2pTT"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "4kHW52986WPdmUnp1cU0ts"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "1dhjVxe4bJJTBbtqnKv1rC"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "7aqM5Uwprm6bhUWuuWSEQa"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "6Fvu699eaECsFshzO5XYuv"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "2iVTXmScLKaEn7lTt73ybF"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "1P0TWYzyGMHlsRQCxRF8no"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "1Tnf9JHpy9tnKo6fhjR4zJ"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "46BTwhL5emzTaicjMgD8IW"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "1Ib5CXKRQyCEaUc9C6EClP"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "41RvSMoqdO9EhN77JKNqUD"
+					}
+				}]
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "4kHW52986WPdmUnp1cU0ts",
+			"type": "Entry",
+			"createdAt": "2023-06-26T14:18:22.956Z",
+			"updatedAt": "2023-06-26T14:18:22.956Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 1,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "contentLabel"
+				}
+			}
+		},
+		"fields": {
+			"labelTitle": {
+				"en-US": "Apply Form - Step 1 - Postcode Error label"
+			},
+			"labelText": {
+				"en-US": "Invalid postcode format",
+				"es-ES": "Formato de cÃ³digo postal no vÃ¡lido"
+			},
+			"labelId": {
+				"en-US": "page.apply.step1.postcode.label.error"
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "1dhjVxe4bJJTBbtqnKv1rC",
+			"type": "Entry",
+			"createdAt": "2023-06-26T14:15:58.192Z",
+			"updatedAt": "2023-06-26T14:15:58.192Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 1,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "contentLabel"
+				}
+			}
+		},
+		"fields": {
+			"labelTitle": {
+				"en-US": "Apply Form - Step 1 - Postcode label"
+			},
+			"labelText": {
+				"en-US": "Postcode",
+				"es-ES": "CÃ³digo postal"
+			},
+			"labelId": {
+				"en-US": "page.apply.step1.postcode.label"
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "7aqM5Uwprm6bhUWuuWSEQa",
+			"type": "Entry",
+			"createdAt": "2023-06-26T14:14:53.751Z",
+			"updatedAt": "2023-06-26T14:14:53.751Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 1,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "contentLabel"
+				}
+			}
+		},
+		"fields": {
+			"labelTitle": {
+				"en-US": "Apply Form - Step 1 - County label"
+			},
+			"labelText": {
+				"en-US": "County",
+				"es-ES": "Condado"
+			},
+			"labelId": {
+				"en-US": "page.apply.step1.county.label"
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "6Fvu699eaECsFshzO5XYuv",
+			"type": "Entry",
+			"createdAt": "2023-06-26T14:13:59.119Z",
+			"updatedAt": "2023-06-26T14:13:59.119Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 1,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "contentLabel"
+				}
+			}
+		},
+		"fields": {
+			"labelTitle": {
+				"en-US": "Apply Form - Step 1 - City label"
+			},
+			"labelText": {
+				"en-US": "City",
+				"es-ES": "Ciudad"
+			},
+			"labelId": {
+				"en-US": "page.apply.step1.city.label"
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "2iVTXmScLKaEn7lTt73ybF",
+			"type": "Entry",
+			"createdAt": "2023-06-26T14:12:32.869Z",
+			"updatedAt": "2023-06-26T14:12:32.869Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 1,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "contentLabel"
+				}
+			}
+		},
+		"fields": {
+			"labelTitle": {
+				"en-US": "Apply Form - Step 1 - Address 2 label"
+			},
+			"labelText": {
+				"en-US": "Address Line 2",
+				"es-ES": "DirecciÃ³n LÃ­nea 2"
+			},
+			"labelId": {
+				"en-US": "page.apply.step1.address2.label"
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "1P0TWYzyGMHlsRQCxRF8no",
+			"type": "Entry",
+			"createdAt": "2023-06-26T14:10:04.884Z",
+			"updatedAt": "2023-06-26T14:12:09.415Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 2,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "contentLabel"
+				}
+			}
+		},
+		"fields": {
+			"labelTitle": {
+				"en-US": "Apply Form - Step 1 - Address 1 label"
+			},
+			"labelText": {
+				"en-US": "Address Line 1",
+				"es-ES": "DirecciÃ³n LÃ­nea 1"
+			},
+			"labelId": {
+				"en-US": "page.apply.step1.address1.label"
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "50GP0wUjqdJcyeN24PT6NZ",
+			"type": "Entry",
+			"createdAt": "2023-02-06T13:57:43.259Z",
+			"updatedAt": "2023-06-21T09:44:53.888Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 4,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "callToAction"
+				}
+			}
+		},
+		"fields": {
+			"callToActionTitle": {
+				"en-US": "CTA - VAA Offer of the Day "
+			},
+			"callToActionText": {
+				"en-US": "Find out more",
+				"es-ES": "Saber mÃ¡s"
+			},
+			"callToActionId": {
+				"en-US": "page.navigation.vaa-offer.cta"
+			},
+			"callToActionStyle": {
+				"en-US": ["Red", "Text"]
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "7Hs8B1H9DV9siVyd4ldRIp",
+			"type": "Entry",
+			"createdAt": "2023-06-19T14:52:18.837Z",
+			"updatedAt": "2023-06-21T09:39:29.606Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 2,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "tile"
+				}
+			}
+		},
+		"fields": {
+			"tileTitle": {
+				"en-US": "Tile - Exclusives - Exclusive Rewards"
+			},
+			"tileRef": {
+				"en-US": "tile.exclusive.exclusive-rewards"
+			},
+			"tileImage": {
+				"en-US": {
+					"sys": {
+						"type": "Link",
+						"linkType": "Asset",
+						"id": "67uG3YzR7BH0SXpeFTiivj"
+					}
+				}
+			},
+			"tileHeadline": {
+				"en-US": "Exclusive Rewards",
+				"es-ES": "Recompensas exclusivas"
+			},
+			"tileSubBody": {
+				"en-US": "Your current account is packed with red hot rewards",
+				"es-ES": "Su cuenta actual estÃ¡ repleta de recompensas al rojo vivo"
+			},
+			"tileBody": {
+				"en-US": {
+					"data": {},
+					"content": [{
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "Rewards coming soon",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [],
+							"value": "\n",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "Look out for fresh rewards lined up for you in 2023",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}],
+					"nodeType": "document"
+				},
+				"es-ES": {
+					"nodeType": "document",
+					"data": {},
+					"content": [{
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Recompensas prÃ³ximamente",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "\nBusque nuevas recompensas para usted en 2023",
+							"marks": [],
+							"data": {}
+						}]
+					}]
+				}
+			},
+			"tileCta": {
+				"en-US": {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "7jTIGfWMjDmJhAQNUP8atN"
+					}
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "0Cul2Umc8QtB0BIKgYtFO",
+			"type": "Entry",
+			"createdAt": "2023-06-19T14:26:56.136Z",
+			"updatedAt": "2023-06-21T09:34:49.974Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 2,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "tile"
+				}
+			}
+		},
+		"fields": {
+			"tileTitle": {
+				"en-US": " Tile - Exclusves - Virgin Red"
+			},
+			"tileRef": {
+				"en-US": "tile.exclusives.virgin-red"
+			},
+			"tileImage": {
+				"en-US": {
+					"sys": {
+						"type": "Link",
+						"linkType": "Asset",
+						"id": "1FKWwoFk97Yx2PX8nwIUW4"
+					}
+				}
+			},
+			"tileHeadline": {
+				"en-US": "Virgin Red",
+				"es-ES": "Virgin Red"
+			},
+			"tileSubBody": {
+				"en-US": "The rewards club from Virgin",
+				"es-ES": "El club de recompensas de Virgin"
+			},
+			"tileBody": {
+				"en-US": {
+					"data": {},
+					"content": [{
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "Join Virgin Red and earn Virgin Points on your everyday spending",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [],
+							"value": "\n",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}, {
+								"type": "italic"
+							}, {
+								"type": "underline"
+							}],
+							"value": "How it works",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [],
+							"value": "\n",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "Pick up Virgin Points",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [],
+							"value": "\n",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "From hotel suites to tasty treats, make your purchases through Virgin Red and you'll pick up Virgin Points on your spending.\n",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "Spend Virgin Points",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [],
+							"value": "\n",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "With rewards ranging from savoury bites to long haul flights, you can treat yourself with just a few hundred Virgin Points. Virgin Points never expire so you've plenty of time to decide.\n",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "So, if you're over 18 and want to treat you, get into Virgin Red.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}],
+					"nodeType": "document"
+				},
+				"es-ES": {
+					"nodeType": "document",
+					"data": {},
+					"content": [{
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Ãšnase a Virgin Red y gane Puntos Virgin con sus gastos diarios",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "\n",
+							"marks": [],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": "CÃ³mo funciona",
+							"marks": [{
+								"type": "bold"
+							}, {
+								"type": "underline"
+							}, {
+								"type": "italic"
+							}],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "\n",
+							"marks": [],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": "Recoge puntos vÃ­rgenes",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "\nDesde suites de hotel hasta delicias, haga sus compras a travÃ©s de Virgin Red y obtendrÃ¡ Virgin Points por sus gastos.",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "\n",
+							"marks": [],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": "Gastar puntos vÃ­rgenes",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "\nCon recompensas que van desde sabrosos bocados hasta vuelos de larga distancia, puede darse el gusto con unos pocos cientos de Virgin Points. Los Virgin Points nunca caducan, por lo que tiene mucho tiempo para decidir.",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "\nAsÃ­ que, si eres mayor de 18 aÃ±os y quieres que te den un capricho, mÃ©tete en Virgin Red.",
+							"marks": [],
+							"data": {}
+						}]
+					}]
+				}
+			},
+			"tileCta": {
+				"en-US": {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "7oUDxtf4GSlHXememA9CpY"
+					}
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "7jTIGfWMjDmJhAQNUP8atN",
+			"type": "Entry",
+			"createdAt": "2023-06-19T14:51:58.438Z",
+			"updatedAt": "2023-06-19T14:51:58.438Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 1,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "callToAction"
+				}
+			}
+		},
+		"fields": {
+			"callToActionTitle": {
+				"en-US": "CTA - Exclusive Rewards"
+			},
+			"callToActionText": {
+				"en-US": "More Info",
+				"es-ES": "Saber Mas"
+			},
+			"callToActionId": {
+				"en-US": "tile.exclusive.exclusive-rewards.cta"
+			},
+			"callToActionStyle": {
+				"en-US": ["icon", "black"]
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "67uG3YzR7BH0SXpeFTiivj",
+			"type": "Asset",
+			"createdAt": "2023-06-19T14:49:05.454Z",
+			"updatedAt": "2023-06-19T14:49:05.454Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 1
+		},
+		"fields": {
+			"title": {
+				"en-US": "Exclusive Rewards Banner"
+			},
+			"description": {
+				"en-US": "Banner"
+			},
+			"file": {
+				"en-US": {
+					"url": "//images.ctfassets.net/5n0lh0o2t6d6/67uG3YzR7BH0SXpeFTiivj/a0cee48e2ec1982ce4617829d2660ea6/IMG_0726.png",
+					"details": {
+						"size": 3076871,
+						"image": {
+							"width": 1086,
+							"height": 651
+						}
+					},
+					"fileName": "IMG_0726.png",
+					"contentType": "image/png"
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "3cVQjYB0VhQWGnB0PsPP3b",
+			"type": "Asset",
+			"createdAt": "2023-06-19T14:46:57.368Z",
+			"updatedAt": "2023-06-19T14:46:57.368Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 1
+		},
+		"fields": {
+			"title": {
+				"en-US": "Youtility Banner"
+			},
+			"description": {
+				"en-US": "Banner"
+			},
+			"file": {
+				"en-US": {
+					"url": "//images.ctfassets.net/5n0lh0o2t6d6/3cVQjYB0VhQWGnB0PsPP3b/619424662dfbf85f8c4ad1e86b59aae3/IMG_0725.png",
+					"details": {
+						"size": 3325342,
+						"image": {
+							"width": 1085,
+							"height": 653
+						}
+					},
+					"fileName": "IMG_0725.png",
+					"contentType": "image/png"
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "61vcXXSrJ7hNPYkA8vMnA1",
+			"type": "Entry",
+			"createdAt": "2023-06-19T14:30:40.793Z",
+			"updatedAt": "2023-06-19T14:30:40.793Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 1,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "callToAction"
+				}
+			}
+		},
+		"fields": {
+			"callToActionTitle": {
+				"en-US": "CTA - Youtility"
+			},
+			"callToActionText": {
+				"en-US": "More info",
+				"es-ES": "Saber mas"
+			},
+			"callToActionId": {
+				"en-US": "tile.exclusives.youtility"
+			},
+			"callToActionStyle": {
+				"en-US": ["red", "icon"]
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "1FKWwoFk97Yx2PX8nwIUW4",
+			"type": "Asset",
+			"createdAt": "2023-06-19T14:25:22.490Z",
+			"updatedAt": "2023-06-19T14:25:22.490Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 1
+		},
+		"fields": {
+			"title": {
+				"en-US": "Virgin Red Banner"
+			},
+			"description": {
+				"en-US": ""
+			},
+			"file": {
+				"en-US": {
+					"url": "//images.ctfassets.net/5n0lh0o2t6d6/1FKWwoFk97Yx2PX8nwIUW4/65fdc33cb3b53c9263af67c6cd5c8e75/IMG_0724.png",
+					"details": {
+						"size": 1498045,
+						"image": {
+							"width": 1085,
+							"height": 649
+						}
+					},
+					"fileName": "IMG_0724.png",
+					"contentType": "image/png"
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "7oUDxtf4GSlHXememA9CpY",
+			"type": "Entry",
+			"createdAt": "2023-06-19T14:24:12.138Z",
+			"updatedAt": "2023-06-19T14:24:12.138Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 1,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "callToAction"
+				}
+			}
+		},
+		"fields": {
+			"callToActionTitle": {
+				"en-US": "CTA - Virgin Red Tile"
+			},
+			"callToActionText": {
+				"en-US": "Find out more",
+				"es-ES": "Saber mas"
+			},
+			"callToActionId": {
+				"en-US": "tile.exclusives.virgin-red.cta"
+			},
+			"callToActionStyle": {
+				"en-US": ["red", "icon"]
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "1FTHjMWyrpVql0DOBp6MEd",
+			"type": "Asset",
+			"createdAt": "2023-06-19T14:07:51.414Z",
+			"updatedAt": "2023-06-19T14:07:51.414Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 1
+		},
+		"fields": {
+			"title": {
+				"en-US": "Cashback Hero Banner"
+			},
+			"description": {
+				"en-US": "Big Banner"
+			},
+			"file": {
+				"en-US": {
+					"url": "//images.ctfassets.net/5n0lh0o2t6d6/1FTHjMWyrpVql0DOBp6MEd/53ca94105b804d235fe91b943c7c3d70/IMG_0723.png",
+					"details": {
+						"size": 1431381,
+						"image": {
+							"width": 1084,
+							"height": 651
+						}
+					},
+					"fileName": "IMG_0723.png",
+					"contentType": "image/png"
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "20emiBFCkwwr1Q9KaQpniB",
+			"type": "Entry",
+			"createdAt": "2023-02-06T14:17:33.678Z",
+			"updatedAt": "2023-06-15T08:28:52.339Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 17,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "tile"
+				}
+			}
+		},
+		"fields": {
+			"tileTitle": {
+				"en-US": "Tile - VAA Offer of the Day"
+			},
+			"tileRef": {
+				"en-US": "home.tile.offers.vaa"
+			},
+			"tileImage": {
+				"en-US": {
+					"sys": {
+						"type": "Link",
+						"linkType": "Asset",
+						"id": "6K6kxb86bzqbk61mr6caGB"
+					}
+				}
+			},
+			"tileLogo": {
+				"en-US": {
+					"sys": {
+						"type": "Link",
+						"linkType": "Asset",
+						"id": "1bGreaaFBqIIBrQxTgGFgY"
+					}
+				}
+			},
+			"tileHeadline": {
+				"en-US": "Offer of the day",
+				"es-ES": "oferta del dia"
+			},
+			"tileBody": {
+				"en-US": {
+					"data": {},
+					"content": [{
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "You can get an ",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "exclusive",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [],
+							"value": " deal. ",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "Get your ",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [{
+								"type": "italic"
+							}],
+							"value": "perfect",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [],
+							"value": " holiday down under.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}, {
+								"type": "italic"
+							}],
+							"value": "Happy Monday",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}],
+					"nodeType": "document"
+				},
+				"es-ES": {
+					"data": {},
+					"content": [{
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "Puedes obtener un trato ",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "exclusivo",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [],
+							"value": ".",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "Consiga sus vacaciones ",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [{
+								"type": "italic"
+							}],
+							"value": "perfectas",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [],
+							"value": " abajo.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}],
+					"nodeType": "document"
+				}
+			},
+			"tileSubBody": {
+				"en-US": "200,000 + points",
+				"es-ES": "120,000 + puntos"
+			},
+			"tileCta": {
+				"en-US": {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "50GP0wUjqdJcyeN24PT6NZ"
+					}
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "7bF1OLeKTgrhfkpvonhviJ",
+			"type": "Entry",
+			"createdAt": "2023-06-07T10:43:18.755Z",
+			"updatedAt": "2023-06-09T13:22:08.819Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 4,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "faqItem"
+				}
+			}
+		},
+		"fields": {
+			"faqTitle": {
+				"en-US": "What's my credit limit going to be?",
+				"es-ES": "Cual va a ser mi limite de credito?"
+			},
+			"faqBody": {
+				"en-US": {
+					"nodeType": "document",
+					"data": {},
+					"content": [{
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Once you have completed an application, we'll be able to confirm your credit limit. Your credit limit will be worked out based on your personal circumstances.",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "If you have any problems, please get in touch...",
+							"marks": [],
+							"data": {}
+						}]
+					}]
+				},
+				"es-ES": {
+					"data": {},
+					"content": [{
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "Una vez que haya completado una solicitud, podremos confirmar su limite de credito. Su limite de credito se calculara en funcion de sus circunstancias personales.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}],
+					"nodeType": "document"
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "3vUsjOmXQVr46NJOGVQG62",
+			"type": "Entry",
+			"createdAt": "2023-06-07T10:37:57.397Z",
+			"updatedAt": "2023-06-09T11:37:42.918Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 3,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "faqItem"
+				}
+			}
+		},
+		"fields": {
+			"faqTitle": {
+				"en-US": "Can I cancel the agreement if I change my mind?",
+				"es-ES": "Puedo cancelar el contrato si cambio de opinion?"
+			},
+			"faqBody": {
+				"en-US": {
+					"data": {},
+					"content": [{
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "You can withdraw from your agreement within 14 days from the day after you receive your Virgin Money or Virgin Atlantic Credit Card. YouÂ have the option toÂ contact usÂ or send your request in writing. Please use the appropriate address for theÂ card you applied for:",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "Virgin Money Credit Cards",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [],
+							"value": "\nPO Box 10234\nWigston\nLE18 9FA",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "Virgin Atlantic Credit Cards",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [],
+							"value": "\nPO Box 10609\nWigston\nLE18 9HA",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "Remember, you must repay any balance and interest or fees (if applicable) within 30 days of the date you tell us you want to cancel your agreement. You will not have to pay any other charges and you can repay your balance in full at any time.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "If you wish to cancel the agreement outside of the cooling off period you will need to contact us",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}],
+					"nodeType": "document"
+				},
+				"es-ES": {
+					"nodeType": "document",
+					"data": {},
+					"content": [{
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Puede rescindir su acuerdo dentro de los 14 dÃ­as a partir del dia posterior a la recepcion de su tarjeta de credito Virgin Money o Virgin Atlantic. Tiene la opciÃ³n de contactarnos o enviar su solicitud por escrito. Utilice la direccion adecuada para la tarjeta que solicito:",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Tarjetas de credito Virgin Money",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": "\napartado de correos 10234\nWigston\nLE18 9FA",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Tarjetas de credito de Virgin Atlantic",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": "\napartado de correos 10609\nWigston\nLE18 9HA",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Recuerde, debe pagar cualquier saldo e interÃ©s o cargo (si corresponde) dentro de los 30 dias posteriores a la fecha en que nos informa que desea cancelar su acuerdo. No tendra que pagar ningun otro cargo y puede pagar su saldo en su totalidad en cualquier momento.",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Si desea cancelar el acuerdo fuera del perÃ­odo de reflexion, debera comunicarse con nosotros.",
+							"marks": [],
+							"data": {}
+						}]
+					}]
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "6q2ewCgUjRwCMBvV7JrmGe",
+			"type": "Entry",
+			"createdAt": "2023-06-07T12:21:37.933Z",
+			"updatedAt": "2023-06-09T11:36:25.206Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 3,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "faqCollection"
+				}
+			}
+		},
+		"fields": {
+			"faqCollectionTitle": {
+				"en-US": "Something's gone wrong",
+				"es-ES": "Algo salio mal"
+			},
+			"faqs": {
+				"en-US": [{
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "y3YYtIiEz1OjPmDJqVsq5"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "2BaluLaocBnvNGjIzfHh2"
+					}
+				}]
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "38GT8QttYlY8H68mvjkWQN",
+			"type": "Entry",
+			"createdAt": "2023-06-07T12:12:24.314Z",
+			"updatedAt": "2023-06-09T11:35:53.674Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 4,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "faqCollection"
+				}
+			}
+		},
+		"fields": {
+			"faqCollectionTitle": {
+				"en-US": "Important Information",
+				"es-ES": "Informacion importante"
+			},
+			"faqs": {
+				"en-US": [{
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "67F31YA587bQweA37iV9Xa"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "3lOOlPPv6Ug6FKKlUqyNP0"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "3OvMKHO4vusFIKr4EEav3l"
+					}
+				}]
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "4Szjh2hF6wmi9beywIMeXs",
+			"type": "Entry",
+			"createdAt": "2023-06-07T10:37:41.716Z",
+			"updatedAt": "2023-06-09T11:35:19.395Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 2,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "faqItem"
+				}
+			}
+		},
+		"fields": {
+			"faqTitle": {
+				"en-US": "Can I hold Virgin Money, Virgin Atlantic and Virgin Money Slyce products?",
+				"es-ES": "Puedo tener productos de Virgin Money, Virgin Atlantic y Virgin Money Slyce?"
+			},
+			"faqBody": {
+				"en-US": {
+					"data": {},
+					"content": [{
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "Yes - depending on your individual circumstances, you may be able to hold all three products.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}],
+					"nodeType": "document"
+				},
+				"es-ES": {
+					"nodeType": "document",
+					"data": {},
+					"content": [{
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Si, segun sus circunstancias individuales, es posible que pueda conservar los tres productos.",
+							"marks": [],
+							"data": {}
+						}]
+					}]
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "12wbeXYGJ1AXy3Fl4jxr8P",
+			"type": "Entry",
+			"createdAt": "2023-06-07T10:40:35.637Z",
+			"updatedAt": "2023-06-09T11:33:48.641Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 2,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "faqItem"
+				}
+			}
+		},
+		"fields": {
+			"faqTitle": {
+				"en-US": "How do I apply for a credit card?",
+				"es-ES": "Como solicito una tarjeta de credito?"
+			},
+			"faqBody": {
+				"en-US": {
+					"data": {},
+					"content": [{
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "It's quick and easy to apply with our secure online application and there's plenty of products to choose from.Â \n",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "\nYou can use ourÂ card checker to find out if youâ€™re likely to be approved for a credit card before you apply â€“ without affecting your credit score.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}],
+					"nodeType": "document"
+				},
+				"es-ES": {
+					"nodeType": "document",
+					"data": {},
+					"content": [{
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Es rapido y facil de aplicar con nuestra aplicacion segura en linea y hay muchos productos para elegir.",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": "\n",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "\nPuede usar nuestro verificador de tarjetas para averiguar si es probable que se le apruebe una tarjeta de credito antes de presentar la solicitud, sin afectar su puntaje de credito.",
+							"marks": [],
+							"data": {}
+						}]
+					}]
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "67F31YA587bQweA37iV9Xa",
+			"type": "Entry",
+			"createdAt": "2023-06-07T12:00:34.400Z",
+			"updatedAt": "2023-06-09T11:28:34.874Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 3,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "faqItem"
+				}
+			}
+		},
+		"fields": {
+			"faqTitle": {
+				"en-US": "My application was approved, what happens next?",
+				"es-ES": "Mi solicitud fue aprobada, que sucede despues?"
+			},
+			"faqBody": {
+				"en-US": {
+					"data": {},
+					"content": [{
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "Great that you have been approved, here's the run down of what will happen next.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "Your card",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [],
+							"value": "Â - we send this to your home address within 7 - 10 business days of the date your application was approved. If you requested an additional cardholder when you applied, their card will arrive with yours.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "Your PIN",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [],
+							"value": "Â - we don't send paper pins out forÂ main cardholders, you can view your PIN in theÂ app.Â Additional cardholders can'tÂ access the app, so we'll post their PIN directly to them 5 to 7 business days after the application has been approved.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "Balance and money transfers",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [],
+							"value": "Â - if you requested to transfer a balance from another card or send money to your bank account, this usually takes 2 - 3 business days to transfer the funds from your Virgin Money or Virgin Atlantic Credit Card.Â  In some cases this can take a little longer as we may need to complete necessary additional checks which may increase the time it takes to complete the funds transfer.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "Download our app",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [],
+							"value": "Â - once you have received your card you can download the app and get registered. Simply head to the App Store or Google Play and search for Virgin Money Credit Card.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}],
+					"nodeType": "document"
+				},
+				"es-ES": {
+					"nodeType": "document",
+					"data": {},
+					"content": [{
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Genial que haya sido aprobado, aqui esta el resumen de lo que sucedera a continuacion.",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Su tarjeta:",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": " la enviamos a su domicilio dentro de los 7 a 10 dias habiles posteriores a la fecha en que se aprobo su solicitud. Si solicitÃ³ un titular de tarjeta adicional cuando solicitÃ³, su tarjeta llegarÃ¡ con la suya.",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Su PIN:",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": " no enviamos pines en papel para los principales titulares de tarjetas, puede ver su PIN en la aplicaciÃ³n de la tarjeta de crÃ©dito Virgin Money. Los titulares de tarjetas adicionales no pueden acceder a la aplicaciÃ³n, por lo que les enviaremos su PIN directamente entre 5 y 7 dÃ­as hÃ¡biles despuÃ©s de que se haya aprobado la solicitud.",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Transferencias de saldo y de dinero: ",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": "si solicitÃ³ transferir un saldo de otra tarjeta o enviar dinero a su cuenta bancaria, por lo general toma de 2 a 3 dias habiles para transferir los fondos de su tarjeta de credito Virgin Money o Virgin Atlantic. En algunos casos, esto puede demorar un poco mas, ya que es posible que debamos completar los controles adicionales necesarios, lo que puede aumentar el tiempo que lleva completar la transferencia de fondos.",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Descargue nuestra aplicacion:",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": " una vez que haya recibido su tarjeta, puede descargar la aplicaciÃ³n y registrarse. Simplemente dirÃ­jase a App Store o Google Play y busque Tarjeta de crÃ©dito Virgin Money.",
+							"marks": [],
+							"data": {}
+						}]
+					}]
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "3lOOlPPv6Ug6FKKlUqyNP0",
+			"type": "Entry",
+			"createdAt": "2023-06-07T12:11:20.496Z",
+			"updatedAt": "2023-06-09T11:25:14.586Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 2,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "faqItem"
+				}
+			}
+		},
+		"fields": {
+			"faqTitle": {
+				"en-US": "When will I receive my card(s)?",
+				"es-ES": "Cuando recibire mi(s) tarjeta(s)?"
+			},
+			"faqBody": {
+				"en-US": {
+					"data": {},
+					"content": [{
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "If we approve your application, we'll send your Virgin Money or Virgin Atlantic Credit Card to you within 7-10 business days.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "If you requested to have an additional cardholder on your application and it was approved, you will receive their card at the same time.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}],
+					"nodeType": "document"
+				},
+				"es-ES": {
+					"nodeType": "document",
+					"data": {},
+					"content": [{
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Si aprobamos su solicitud, le enviaremos su tarjeta de credito Virgin Money o Virgin Atlantic dentro de 7 a 10 dias habiles.",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Si solicito tener un titular de tarjeta adicional en su solicitud y fue aprobado, recibira su tarjeta al mismo tiempo.",
+							"marks": [],
+							"data": {}
+						}]
+					}]
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "2BaluLaocBnvNGjIzfHh2",
+			"type": "Entry",
+			"createdAt": "2023-06-07T12:18:59.608Z",
+			"updatedAt": "2023-06-09T11:23:48.537Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 15,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "faqItem"
+				}
+			}
+		},
+		"fields": {
+			"faqTitle": {
+				"en-US": "The balance transfer/money transfer I requested hasn't been completed",
+				"es-ES": "La transferencia de saldo/transferencia de dinero que solicitÃ© no se ha completado."
+			},
+			"faqBody": {
+				"en-US": {
+					"data": {},
+					"content": [{
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "If you requested a balance transfer or money transfer when you applied for your credit card, we'll always try to complete these transfer requests for you. Sometimes though, we're not able to.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "\nOnce your application has been approved, we'll send you an email to let you know your credit limit, and which of your transfer requests we're able to complete. Sometimes, we're not able to complete a balance transfer or money transfer for the amount you requested. There's a couple of reasons why this might happen:",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "1) We were unable to give you a credit limit large enough to cover all the transfers you asked for\n",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [],
+							"value": "\nTo determine your credit limit, we consider a range of factors including affordability, late and/or missed payments and changes to your credit score and report. We also receive updates from Experian (a Credit Reference Agency), about how you manage other accounts outside Virgin Money.\n\nWe can only allocate up to 95% of your credit limit for balance & money transfers (excluding fees). If this isn't enough to cover the transfers you've asked for, we'll transfer as much as we can.Â  This means some transfers might be completed with a lower amount, and some might not be completed at all (these will be shown as Â£0).\n\nWhen we are completing transfer requests, we'll pay any money transfers first, so these always take priority. We'll then pay any balance transfers in the order you listed them in your application.\n",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [{
+								"type": "italic"
+							}],
+							"value": "\nIf you wish to appeal your credit limit decision, please contact us within 45 days of opening the account. We will need to know why you wish to appeal, and what additional information you can provide that would support the request for a higher credit limit.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "\n",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "2) There was a problem with the transfer details you gave us",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [],
+							"value": "\nIf we've given you a credit limit large enough to cover the transfers you've asked for, but you still have a transfer showing as Â£0, then there may be a problem with the transfer details you gave us.\n",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "\nIt might be because we can't complete a transfer to the card details you provided:",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"content": [{
+								"data": {},
+								"content": [{
+									"data": {},
+									"marks": [],
+									"value": " We're unable to complete balance transfers from any other Virgin Money, Clydesdale Bank, Yorkshire Bank or B credit cards, or from non-UK financial organisations (including someÂ Amex cards), or store cardsÂ which don't have the VISA or Mastercard logo.",
+									"nodeType": "text"
+								}],
+								"nodeType": "paragraph"
+							}],
+							"nodeType": "list-item"
+						}, {
+							"data": {},
+							"content": [{
+								"data": {},
+								"content": [{
+									"data": {},
+									"marks": [],
+									"value": "We can only complete balance transfers from cards in your name, or the name of any additional cardholders. \n",
+									"nodeType": "text"
+								}],
+								"nodeType": "paragraph"
+							}],
+							"nodeType": "list-item"
+						}],
+						"nodeType": "unordered-list"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "\nOr you might have entered the transfer details incorrectly when adding them to your application - if that's the case you can make this request again by getting in touchÂ with us.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "If you're still unsure why your transfer can't be completed, then you can contact usÂ to find out.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "We appreciate that it can be frustrating when we are not able to do the things you ask us. If we're not able to complete the transfers you've asked for, and you change your mind about continuing your application, you have the right to withdraw from your agreementÂ within 14 days from the day after you receive your card.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "If you're happy to continue with your application, then we'll assess your credit limit every six months to see if it can beÂ increased. You'll also be able to use any available credit you have to complete money or balance transfers, which you can do in theÂ app",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "Please continue to pay your credit or store cards as you normally would until any balance transfers show on your account.",
+							"nodeType": "text"
+						}, {
+							"data": {},
+							"marks": [],
+							"value": "Â To confirm if a transfer is complete, you'll need to check with your credit or store card provider in the usual way you manage your account.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}],
+					"nodeType": "document"
+				},
+				"es-ES": {
+					"nodeType": "document",
+					"data": {},
+					"content": [{
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Si solicito una transferencia de saldoÂ o transferencia de dineroÂ cuando solicitÃ³ su tarjeta de crÃ©dito, siempre intentaremos completar estas solicitudes de transferencia por usted. A veces, sin embargo, no somos capaces de hacerlo.\n",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "\nUna vez que se haya aprobado su solicitud, le enviaremos un correo electrÃ³nico para informarle su lÃ­mite de credito y cuÃ¡les de sus solicitudes de transferencia podemos completar. A veces, no podemos completar una transferencia de saldo o una transferencia de dinero por el monto que solicito. Hay un par de razones por las que esto podrÃ­a suceder:\n",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "\n",
+							"marks": [],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": "1) No pudimos darle un lÃ­mite de credito lo suficientemente grande para cubrir todas las transferencias que solicito",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": "\nPara determinar su lÃ­mite de credito, consideramos una variedad de factores que incluyen la asequibilidad, pagos atrasados y/o atrasados y cambios en su puntaje e informe de credito. Tambien recibimos actualizaciones de Experian (una agencia de referencia crediticia) sobre cÃ³mo administra otras cuentas fuera de Virgin Money.\nSolo podemos asignar hasta el 95 % de su lÃ­mite de crÃ©dito para transferencias de saldo y dinero (excluyendo cargos). Si esto no es suficiente para cubrir las transferencias que ha solicitado, transferiremos todo lo que podamos. Esto significa que es posible que algunas transferencias se completen con un monto menor y que otras no se completen (apareceran como Â£0).\n",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "\nCuando estemos completando las solicitudes de transferencia, pagaremos primero las transferencias de dinero, por lo que siempre tienen prioridad. Luego pagaremos cualquier transferencia de saldo en el orden en que las enumero en su solicitud.\nSi desea apelar su decision de limite de credito, comuniquese con nosotros dentro de los 45 dias posteriores a la apertura de la cuenta. Necesitaremos saber por que desea apelar y que informacion adicional puede proporcionar que respalde la solicitud de un lÃ­mite de credito mas alto.\n\n",
+							"marks": [],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": "2) Hubo un problema con los detalles de la transferencia que nos diste",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": "\nSi le hemos dado un lÃ­mite de crÃ©dito lo suficientemente grande como para cubrir las transferencias que ha solicitado, pero todavÃ­a tiene una transferencia que se muestra como Â£0, entonces puede haber un problema con los detalles de la transferencia que nos proporcionÃ³.",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Puede deberse a que no podemos completar una transferencia a los detalles de la tarjeta que proporciono:\n- No podemos completar transferencias de saldo de ninguna otra tarjeta de crÃ©dito de Virgin Money, Clydesdale Bank, Yorkshire Bank o B, o de organizaciones financieras fuera del Reino Unido (incluidas algunasÂ tarjetas Amex), o tarjetas de tiendasÂ que no tienen VISA o logotipo de tarjeta maestra.\n- Solo podemos completar transferencias de saldo de tarjetas a su nombre o a nombre de cualquier titular de tarjeta adicional.",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "O es posible que haya ingresado los detalles de la transferencia incorrectamente al agregarlos a su solicitud; si ese es el caso, puede volver a realizar esta solicitud poniÃ©ndose en contacto con nosotros.\n",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "\n",
+							"marks": [],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": "Si aun no esta seguro de por quÃ© no se puede completar su transferencia, puede comunicarse con nosotros para averiguarlo.",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": "\n\nEntendemos que puede ser frustrante cuando no podemos hacer las cosas que nos pide. Si no podemos completar las transferencias que ha solicitado y cambia de opiniÃ³n acerca de continuar con su solicitud, tiene derecho a rescindir su acuerdoÂ en un plazo de 14Â dÃ­as a partir del dÃ­a posterior a la recepcion de su tarjeta.\n",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "\nSi esta satisfecho con continuar con su solicitud, evaluaremos su lÃ­mite de crÃ©dito cada seis meses para ver si se puede aumentar. TambiÃ©n podrÃ¡ usar cualquier crÃ©dito disponible que tenga para completar transferencias de dinero o saldo, lo que puede hacer en laÂ aplicaciÃ³n\n",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "\n",
+							"marks": [],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": "Continue pagando sus tarjetas de credito o de la tienda como lo haria normalmente hasta que aparezca cualquier transferencia de saldo en su cuenta.",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": " Para confirmar si una transferencia esta completa, deberÃ¡ consultar con su proveedor de tarjeta de crÃ©dito o de la tienda de la forma habitual en que administra su cuenta.",
+							"marks": [],
+							"data": {}
+						}]
+					}]
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "y3YYtIiEz1OjPmDJqVsq5",
+			"type": "Entry",
+			"createdAt": "2023-06-07T12:20:27.718Z",
+			"updatedAt": "2023-06-09T11:15:36.848Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 4,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "faqItem"
+				}
+			}
+		},
+		"fields": {
+			"faqTitle": {
+				"en-US": "The credit limit I've been given is less than I expected, what can I do?",
+				"es-ES": "El limite de credito que me han dado es menor de lo que esperaba, que puedo hacer?"
+			},
+			"faqBody": {
+				"en-US": {
+					"data": {},
+					"content": [{
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [{
+								"type": "bold"
+							}],
+							"value": "The credit limit we've given you is based on your personal circumstances. We know it can be frustrating if you haven't got the credit limit you hoped for.",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}, {
+						"data": {},
+						"content": [{
+							"data": {},
+							"marks": [],
+							"value": "To determine your credit limit, we look at different factors including affordability, any late and/or missed payments as well as changes to your credit score and report. We also get information from Experian (a Credit Reference Agency), about how you manage any other accounts you have outside Virgin Money.Â ",
+							"nodeType": "text"
+						}],
+						"nodeType": "paragraph"
+					}],
+					"nodeType": "document"
+				},
+				"es-ES": {
+					"nodeType": "document",
+					"data": {},
+					"content": [{
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "El limite de credito que le hemos dado se basa en sus circunstancias personales. Sabemos que puede ser frustrante si no tiene el limite de credito que esperaba.",
+							"marks": [{
+								"type": "bold"
+							}],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "",
+							"marks": [],
+							"data": {}
+						}]
+					}, {
+						"nodeType": "paragraph",
+						"data": {},
+						"content": [{
+							"nodeType": "text",
+							"value": "Para determinar su limite de credito, analizamos diferentes factores que incluyen la asequibilidad, cualquier pago atrasado y/o perdido, asi como los cambios en su puntaje e informe de credito. Tambien obtenemos informaci",
+							"marks": [],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": "o",
+							"marks": [],
+							"data": {}
+						}, {
+							"nodeType": "text",
+							"value": "n de Experian (una agencia de referencia crediticia) sobre como administra cualquier otra cuenta que tenga fuera de Virgin Money.",
+							"marks": [],
+							"data": {}
+						}]
+					}]
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "4MM17ACeTXn1NnQsRyukrt",
+			"type": "Entry",
+			"createdAt": "2023-03-17T14:51:32.614Z",
+			"updatedAt": "2023-03-17T14:51:32.614Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 1,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "microcopy"
+				}
+			}
+		},
+		"fields": {
+			"microcopyId": {
+				"en-US": "app.page.product-summary.your-latest-insights"
+			},
+			"microcopyValue": {
+				"en-US": "Your latest insights",
+				"es-ES": "Tus Ãºltimas ideas"
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "5l8PKwn4CvA4PHUs9AjHgR",
+			"type": "Entry",
+			"createdAt": "2023-03-17T11:34:30.257Z",
+			"updatedAt": "2023-03-17T11:34:30.257Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 1,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "microcopy"
+				}
+			}
+		},
+		"fields": {
+			"microcopyId": {
+				"en-US": "app.page.product-summary.offer-of-day"
+			},
+			"microcopyValue": {
+				"en-US": "Your offers of the day",
+				"es-ES": "Tus ofertas del dÃ­a"
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "3XnUwmoDexMnfegBCSr46W",
+			"type": "Asset",
+			"createdAt": "2023-03-13T10:15:25.377Z",
+			"updatedAt": "2023-03-13T10:15:25.377Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 1
+		},
+		"fields": {
+			"title": {
+				"en-US": "img-hero-banner-lg tcm142-122215"
+			},
+			"description": {
+				"en-US": ""
+			},
+			"file": {
+				"en-US": {
+					"url": "//images.ctfassets.net/5n0lh0o2t6d6/3XnUwmoDexMnfegBCSr46W/decde5a48aee47b8ffcf036d73bc16fd/img-hero-banner-lg_tcm142-122215.jpeg",
+					"details": {
+						"size": 132970,
+						"image": {
+							"width": 1440,
+							"height": 640
+						}
+					},
+					"fileName": "img-hero-banner-lg_tcm142-122215.jpeg",
+					"contentType": "image/jpeg"
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "tBaJWIO0vNTn1dJ3ERhKU",
+			"type": "Asset",
+			"createdAt": "2023-02-23T15:36:07.201Z",
+			"updatedAt": "2023-02-23T15:36:07.201Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 1
+		},
+		"fields": {
+			"title": {
+				"en-US": "welcome-3"
+			},
+			"description": {
+				"en-US": "Welcome banner"
+			},
+			"file": {
+				"en-US": {
+					"url": "//images.ctfassets.net/5n0lh0o2t6d6/tBaJWIO0vNTn1dJ3ERhKU/b0c54a71a3872c12e9f2c338ceeaec3b/welcome-3.jpg",
+					"details": {
+						"size": 52495,
+						"image": {
+							"width": 800,
+							"height": 533
+						}
+					},
+					"fileName": "welcome-3.jpg",
+					"contentType": "image/jpeg"
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "7N2S7gKxb8v9jmtL10oNkO",
+			"type": "Entry",
+			"createdAt": "2023-02-07T15:19:17.616Z",
+			"updatedAt": "2023-02-07T15:19:17.616Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 1,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "callToAction"
+				}
+			}
+		},
+		"fields": {
+			"callToActionTitle": {
+				"en-US": "Loading CTA"
+			},
+			"callToActionText": {
+				"en-US": "Welcome - click here to continue",
+				"es-ES": "Bienvenido - haga clic aquÃ­ para continuar"
+			},
+			"callToActionId": {
+				"en-US": "page.navigation.loading.cta"
+			},
+			"callToActionStyle": {
+				"en-US": ["red"]
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "1bGreaaFBqIIBrQxTgGFgY",
+			"type": "Asset",
+			"createdAt": "2023-02-06T14:14:33.436Z",
+			"updatedAt": "2023-02-06T14:14:33.436Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 1
+		},
+		"fields": {
+			"title": {
+				"en-US": "VAA Logo"
+			},
+			"description": {
+				"en-US": "Small VAA thumbnail"
+			},
+			"file": {
+				"en-US": {
+					"url": "//images.ctfassets.net/5n0lh0o2t6d6/1bGreaaFBqIIBrQxTgGFgY/5f5d4f56de5499ded3587b27dc5656fd/hero-logo.png",
+					"details": {
+						"size": 4864,
+						"image": {
+							"width": 75,
+							"height": 75
+						}
+					},
+					"fileName": "hero-logo.png",
+					"contentType": "image/png"
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "6K6kxb86bzqbk61mr6caGB",
+			"type": "Asset",
+			"createdAt": "2023-02-06T14:13:49.493Z",
+			"updatedAt": "2023-02-06T14:13:49.493Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 1
+		},
+		"fields": {
+			"title": {
+				"en-US": "VAA outback"
+			},
+			"description": {
+				"en-US": "For VAA offer of the day"
+			},
+			"file": {
+				"en-US": {
+					"url": "//images.ctfassets.net/5n0lh0o2t6d6/6K6kxb86bzqbk61mr6caGB/8ad828b5ce8ef8e2a765cf0df7556804/outback.jpg",
+					"details": {
+						"size": 73084,
+						"image": {
+							"width": 640,
+							"height": 443
+						}
+					},
+					"fileName": "outback.jpg",
+					"contentType": "image/jpeg"
+				}
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "3wb5Q5RTekCdWahFxAcaf7",
+			"type": "Entry",
+			"createdAt": "2023-01-30T14:44:50.981Z",
+			"updatedAt": "2023-02-06T13:40:07.847Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 5,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "microcopy"
+				}
+			}
+		},
+		"fields": {
+			"microcopyId": {
+				"en-US": "app.page.product-summary.your-balance"
+			},
+			"microcopyValue": {
+				"en-US": "Your Balances",
+				"es-ES": "Su saldo"
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "6mr3FqeQSGis8YfJSTQ3vA",
+			"type": "Entry",
+			"createdAt": "2023-01-30T14:44:25.045Z",
+			"updatedAt": "2023-02-02T08:57:19.510Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 2,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "microcopy"
+				}
+			}
+		},
+		"fields": {
+			"microcopyId": {
+				"en-US": "app.page.product-summary.intro"
+			},
+			"microcopyValue": {
+				"en-US": "Welcome to your Virgin Credit Card",
+				"es-ES": "Bienvenido a su tarjeta de crÃ©dito Virgin"
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "6KzxrKzpgqYMEhsBPUt1Fm",
+			"type": "Entry",
+			"createdAt": "2023-01-30T14:43:44.619Z",
+			"updatedAt": "2023-02-02T08:56:32.672Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 2,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "microcopy"
+				}
+			}
+		},
+		"fields": {
+			"microcopyId": {
+				"en-US": "app.page.product-summary.header"
+			},
+			"microcopyValue": {
+				"en-US": "Product Summary",
+				"es-ES": "Resumen del producto"
+			}
+		}
+	}, {
+		"metadata": {
+			"tags": []
+		},
+		"sys": {
+			"space": {
+				"sys": {
+					"type": "Link",
+					"linkType": "Space",
+					"id": "5n0lh0o2t6d6"
+				}
+			},
+			"id": "7FLmn3zzs0XpYEC0d2HgZ1",
+			"type": "Entry",
+			"createdAt": "2023-01-30T14:54:04.306Z",
+			"updatedAt": "2023-01-30T14:54:04.306Z",
+			"environment": {
+				"sys": {
+					"id": "master",
+					"type": "Link",
+					"linkType": "Environment"
+				}
+			},
+			"revision": 1,
+			"contentType": {
+				"sys": {
+					"type": "Link",
+					"linkType": "ContentType",
+					"id": "pageCopy"
+				}
+			}
+		},
+		"fields": {
+			"pageName": {
+				"en-US": "Product Summary Microcopy"
+			},
+			"microcopy": {
+				"en-US": [{
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "6KzxrKzpgqYMEhsBPUt1Fm"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "6mr3FqeQSGis8YfJSTQ3vA"
+					}
+				}, {
+					"sys": {
+						"type": "Link",
+						"linkType": "Entry",
+						"id": "3wb5Q5RTekCdWahFxAcaf7"
+					}
+				}]
+			}
+		}
+	}],
+	"nextSyncUrl": "https://cdn.contentful.com/spaces/5n0lh0o2t6d6/environments/master/sync?sync_token=FEnChMOBwr1Yw4TCqsK2LcKpCH3CjsORI2IJaGxYw6HDlsOXw43Dsjokw5_Cnj11JAXCnsOaeMKTAsORMcKfSkURPAzDuX_CtMKKB8K-PjF7w54DD8OEw6jCilgawq3ClsOTwpbCjQfCm8ObHsKqKV9Rw6Rzw7o"
+}

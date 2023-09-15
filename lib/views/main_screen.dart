@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'video_screen.dart';
 import 'profile_screen.dart';
+import 'faq_screen.dart';
 import 'settings_screen.dart';
 import '../provider/provider.dart';
 import 'package:flutter/cupertino.dart'; // Import Cupertino widgets
@@ -35,9 +36,10 @@ class _MainScreenState extends ConsumerState<MainScreen> {
       body: IndexedStack(
         index: _currentIndex,
         children: [
-          //VideoPlayerScreen(isVideoTabActive: widget.isVideoTabActive),
+          VideoPlayerScreen(isVideoTabActive: widget.isVideoTabActive),
           ProfileScreen(),
           SettingsScreen(),
+          FAQScreen(),
         ],
       ),
       bottomNavigationBar: CupertinoTabBar(
@@ -49,9 +51,10 @@ class _MainScreenState extends ConsumerState<MainScreen> {
           });
         },
         items: [
-          //BottomNavigationBarItem(icon: Icon(Icons.home)),
+          BottomNavigationBarItem(icon: Icon(Icons.home)),
           BottomNavigationBarItem(icon: Icon(Icons.person)),
           BottomNavigationBarItem(icon: Icon(Icons.settings)),
+          BottomNavigationBarItem(icon: Icon(Icons.access_alarm)),
         ],
       ),
     );
